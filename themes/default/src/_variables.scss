@@ -1,0 +1,15 @@
+:root {
+  --font-size: 18px;
+  --primary-color: #41b883;
+  --secondary-color: #35495e;
+  --gray-darker: #333;
+  --gray-light: #ccc;
+}
+
+$font-size-base: var(--font-size);
+
+$primary-color: var(--primary-color);
+$secondary-color: var(--secondary-color);
+
+$gray-darker: var(--gray-darker);
+$gray-light: var(--gray-light);
