@@ -1,6 +1,6 @@
 {
   "name": "vue-keynote",
-  "version": "0.5.1",
+  "version": "0.6.0",
   "scripts": {
     "prebuild": "npm run clean",
     "build": "vuec src",
