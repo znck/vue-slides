@@ -1,0 +1,17 @@
+{
+  "name": "@keynote/theme-default",
+  "version": "0.1.0",
+  "description": "Default theme for keynote",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "vuec src",
+    "prebuild": "rm -rf dist",
+    "prepublishOnly": "npm run build"
+  },
+  "author": "Rahul Kadyan <hi@znck.me> (https://znck.me)",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepack": "^0.3.1"
+  }
+}
