@@ -1,6 +1,6 @@
 {
   "name": "vue-keynote",
-  "version": "0.0.0",
+  "version": "0.7.0",
   "description": "Present with Vue",
   "main": "index.js",
   "unpkg": "dist/index.js",
@@ -23,10 +23,14 @@
   },
   "homepage": "https://github.com/znck/keynote#readme",
   "dependencies": {
-    "@keynote/cli": "*",
-    "@keynote/core": "*",
-    "@keynote/theme-default": "*"
+    "@keynote/cli": "^0.0.0",
+    "@keynote/core": "^0.0.0",
+    "@keynote/theme-default": "^0.1.1"
   },
+  "files": [
+    "dist/",
+    "index.js"
+  ],
   "devDependencies": {
     "rollup": "^0.59.3",
     "rollup-plugin-commonjs": "^9.1.3",
