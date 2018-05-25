@@ -1,11 +1,12 @@
 {
   "name": "vue-keynote",
-  "version": "0.7.0",
+  "version": "0.7.2",
   "description": "Present with Vue",
   "main": "index.js",
-  "unpkg": "dist/index.js",
+  "unpkg": "dist/keynote.js",
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "prepublishOnly": "pnpm run build"
   },
   "repository": {
     "type": "git",

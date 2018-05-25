@@ -3,7 +3,6 @@ import Hammer from 'hammerjs'
 
 export default {
   name: 'Touch',
-  abstract: process.env.NODE_ENV === 'production',
   render() {
     return this.$slots.default[0]
   },
