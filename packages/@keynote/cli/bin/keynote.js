@@ -13,7 +13,7 @@ program
   .option('-p, --theme <theme>', 'use specified theme (default: @keynote/theme-default)')
   .option('-p, --port <port>', 'use specified port (default: 8080)')
   .option('-h, --host <host>', 'use specified host (default: 0.0.0.0)')
-  .action((file = 'keynote.md', { host, port, theme }) => {
+  .action((file = 'keynote.vue', { host, port, theme }) => {
     wrapCommand(require('./dev'))({ file, host, port, theme })
   })
 
@@ -21,10 +21,11 @@ program
   .command('build [targetFile]')
   .description('build as static site')
   .option('-d, --dest <outDir>', 'specify build output dir (default: .keynote/dist)')
+  .option('-p, --theme <theme>', 'use specified theme (default: @keynote/theme-default)')
   .option('--debug', 'build in development mode for debugging')
-  .action((file = 'keynote.md', { debug, dest }) => {
+  .action((file = 'keynote.vue', { debug, dest, theme }) => {
     const outDir = dest ? path.resolve(dest) : null
-    // TODO: ...
+    wrapCommand(require('./build'))({ file, debug, outDir, theme })
   })
 
 // output help information on unknown commands

@@ -25,6 +25,7 @@
   },
   "homepage": "https://keynote.sh",
   "dependencies": {
+    "autoprefixer": "^8.5.1",
     "cache-loader": "^1.2.2",
     "chalk": "^2.4.1",
     "commander": "^2.15.1",
@@ -38,11 +39,16 @@
     "tmp": "^0.0.33",
     "url-loader": "^1.0.1",
     "vue": "^2.5.16",
+    "vue-loader": "^15.2.1",
     "vue-style-loader": "^4.1.0",
     "vue-template-compiler": "^2.5.16",
     "webpack": "^4.8.3",
     "webpack-chain": "^4.8.0",
     "webpack-hot-client": "^3.0.0",
     "webpack-serve": "^1.0.2"
+  },
+  "peerDependencies": {
+    "@keynote/core": "^0.0.1",
+    "@keynote/theme-default": "^0.1.1"
   }
 }

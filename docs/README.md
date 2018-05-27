@@ -10,14 +10,12 @@ features:
   details: Enjoy the complete dev experience of Vue; write with component, use webpack or CLI plugins.
 - title: Shareable
   details: Keynote generates a static HTML page, and runs as an SPA once a page is loaded.
-footer: MIT Licensed | Copyright © 2018-present Rahul Kadyan
+footer: MIT Licensed | Copyright © 2018 Rahul Kadyan
 ---
 
 ### No setup, no installation
 
 ```html
-<link rel="stylesheet" href="//unpkg.com/vue-keynote/dist/vue-keynote.css" />
-...
 <script src="//unpkg.com/vue"></script>
 <script src="//unpkg.com/vue-keynote"></script>
 ...
@@ -30,7 +28,3 @@ footer: MIT Licensed | Copyright © 2018-present Rahul Kadyan
   new Vue({ el: '#app' })
 </script>
 ```
-
-::: warning
-Requires Vue version >= 2.5
-:::

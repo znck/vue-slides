@@ -2,7 +2,7 @@ const path = require('path')
 const fs = require('fs')
 const chalk = require('chalk')
 const {
-  createEntryFileContent
+  createWebpackConfig
 } = require('./utils')
 const createConfig = require('./webpack/createConfig')
 
@@ -12,30 +12,10 @@ module.exports = async ({
   port,
   theme = '@keynote/theme-default'
 }) => {
-  file = path.resolve(file)
-  theme = require.resolve(theme, {
-    paths: [].concat(require.resolve.paths(file)).concat(require.resolve.paths(__filename))
-  })
-
-  const config = createConfig({
-    outDir: path.resolve(__dirname, '../non-existent')
-  })
   const portfinder = require('portfinder')
   const serve = require('webpack-serve')
   const webpack = require('webpack')
-  const tmp = require('tmp')
-
-  const entry = tmp.fileSync({
-    postfix: '.js'
-  })
-
-  fs.writeFileSync(entry.fd, createEntryFileContent({
-    keynote: require.resolve('../src'),
-    filename: file,
-    theme
-  }))
-  config.entry('keynote').add('~keynote.js').end()
-  config.resolve.alias.set('~keynote.js', entry.name)
+  const config = createWebpackConfig({ file, theme, outDir: path.resolve(__dirname, '../non-existent') })
 
   const compiler = webpack(config.toConfig())
   const defaultHost = process.platform === 'win32' ? 'localhost' : '0.0.0.0'

@@ -10,11 +10,7 @@
   <html>
     <head>
       <title>My First Keynote</title>
-      <!-- Keynote Styles -->
-      <link rel="stylesheet" href="//unpkg.com/vue-keynote/dist/vue-keynote.css">
-      <!-- Vue.js -->
       <script src="//unpkg.com/vue"></script>
-      <!-- Keynote -->
       <script src="//unpkg.com/vue-keynote"></script>
     </head>
 
@@ -47,13 +43,13 @@
 * Install dependencies
 
   ```bash
-  yarn add vue vue-keynote
+  npm add --global vue-keynote
   ```
 
 * Start development server
 
   ```bash
-  keynote serve -o Presentation.vue
+  keynote dev Presentation.vue
   ```
 
 ::: tip

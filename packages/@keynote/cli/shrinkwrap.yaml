@@ -1,4 +1,5 @@
 dependencies:
+  autoprefixer: 8.5.1
   cache-loader: 1.2.2
   chalk: 2.4.1
   commander: 2.15.1
@@ -12,6 +13,7 @@ dependencies:
   tmp: 0.0.33
   url-loader: 1.0.1
   vue: 2.5.16
+  vue-loader: 15.2.1
   vue-style-loader: 4.1.0
   vue-template-compiler: 2.5.16
   webpack: 4.8.3
@@ -39,6 +41,20 @@ packages:
       node: '>= 6'
     resolution:
       integrity: sha512-0T2g2NtaO2zhbqR8EBACIGtBy+haodKb8PuJ17RGDXAJwhjkgghUKLrLEnm05zuiwupfYm2APIax6D2TwLoflA==
+  /@vue/component-compiler-utils/1.3.0:
+    dependencies:
+      consolidate: 0.15.1
+      hash-sum: 1.0.2
+      lru-cache: 4.1.3
+      merge-source-map: 1.1.0
+      postcss: 6.0.22
+      postcss-selector-parser: 3.1.1
+      prettier: 1.12.1
+      source-map: 0.5.7
+      vue-template-es2015-compiler: 1.6.0
+    dev: false
+    resolution:
+      integrity: sha512-CerIPMzE6y4J4v68nUh2NFPjOO8zr2r8UDh/yi63E4bf7YB5Aqhm7Fv90zzTF+sOQgsqTb9dgryvpeDY1/7m9g==
   /@webassemblyjs/ast/1.4.3:
     dependencies:
       '@webassemblyjs/helper-wasm-bytecode': 1.4.3
@@ -378,6 +394,17 @@ packages:
     dev: false
     resolution:
       integrity: sha1-Hb0cg1ZY41zj+ZhAmdsAWFx4IBQ=
+  /autoprefixer/8.5.1:
+    dependencies:
+      browserslist: 3.2.8
+      caniuse-lite: 1.0.30000846
+      normalize-range: 0.1.2
+      num2fraction: 1.2.2
+      postcss: 6.0.22
+      postcss-value-parser: 3.3.0
+    dev: false
+    resolution:
+      integrity: sha512-0zXQ6OqbnVaplQKkKTASxHFPMNy6WfrXS5QRDJ4zTDxEBB3r7NPDSK4h9KCyQi1tq0tX5MsN4RdzChVBn2k/aw==
   /babel-code-frame/6.26.0:
     dependencies:
       chalk: 1.1.3
@@ -535,6 +562,13 @@ packages:
     dev: false
     resolution:
       integrity: sha1-C9dnBCWL6CmyOYu1Dkti0aFmsLk=
+  /browserslist/3.2.8:
+    dependencies:
+      caniuse-lite: 1.0.30000846
+      electron-to-chromium: 1.3.48
+    dev: false
+    resolution:
+      integrity: sha512-WHVocJYavUwVgVViC0ORikPHQquXwVh939TaelZ4WDqpWgTX/FsGhl/+P4qBUAGcRvtOgDgC+xftNWWp2RUTAQ==
   /buffer-from/1.0.0:
     dev: false
     resolution:
@@ -644,6 +678,10 @@ packages:
     dev: false
     resolution:
       integrity: sha1-2chvkUc4202gmO7e2ZdBPERWG9I=
+  /caniuse-lite/1.0.30000846:
+    dev: false
+    resolution:
+      integrity: sha512-qxUOHr5mTaadWH1ap0ueivHd8x42Bnemcn+JutVr7GWmm2bU4zoBhjuv5QdXgALQnnT626lOQros7cCDf8PwCg==
   /capture-stack-trace/1.0.0:
     dev: false
     engines:
@@ -871,6 +909,14 @@ packages:
     dev: false
     resolution:
       integrity: sha1-8CQcRXMKn8YyOyBtvzjtx0HQuxA=
+  /consolidate/0.15.1:
+    dependencies:
+      bluebird: 3.5.1
+    dev: false
+    engines:
+      node: '>= 0.10.0'
+    resolution:
+      integrity: sha512-DW46nrsMJgy9kqAbPt5rKaCr7uFtpo4mSUvLHIUbJEjm0vo+aY5QLwBUq3FK4tRnJr/X0Psc0C4jf/h+HtXSMw==
   /constants-browserify/1.0.0:
     dev: false
     resolution:
@@ -2651,6 +2697,12 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-iuPV41VWKWBIOpBsjoxjDZw8/GbSfZ2mk7N1453bwMrfzdrIk7EzBd+8UVR6rkw67th7xnk9Dytl3J+lHPdxvg==
+  /merge-source-map/1.1.0:
+    dependencies:
+      source-map: 0.6.1
+    dev: false
+    resolution:
+      integrity: sha512-Qkcp7P2ygktpMPh2mCQZaf3jhN6D3Z/qVZHSdWvQ+2Ef5HgRAPBO57A77+ENm0CPx2+1Ce/MYKi3ymqdfuqibw==
   /micromatch/3.1.10:
     dependencies:
       arr-diff: 4.0.0
@@ -3462,6 +3514,16 @@ packages:
     dev: false
     resolution:
       integrity: sha1-+UN3iGBsPJrO4W/+jYsWKX8nu5A=
+  /postcss-selector-parser/3.1.1:
+    dependencies:
+      dot-prop: 4.2.0
+      indexes-of: 1.0.1
+      uniq: 1.0.1
+    dev: false
+    engines:
+      node: '>=4'
+    resolution:
+      integrity: sha1-T4dfSvsMllc9XPTXQBGu4lCn6GU=
   /postcss-svgo/2.1.6:
     dependencies:
       is-svg: 2.1.0
@@ -3518,6 +3580,12 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-1PRWKwzjaW5BrFLQ4ALlemNdxtw=
+  /prettier/1.12.1:
+    dev: false
+    engines:
+      node: '>=4'
+    resolution:
+      integrity: sha1-wa0g6APndJ+vkFpAnSNn4Gu+cyU=
   /pretty-error/2.1.1:
     dependencies:
       renderkid: 2.0.1
@@ -4592,6 +4660,23 @@ packages:
     dev: false
     resolution:
       integrity: sha1-XX6kW7755Kb/ZflUOOCofDV9WnM=
+  /vue-hot-reload-api/2.3.0:
+    dev: false
+    resolution:
+      integrity: sha512-2j/t+wIbyVMP5NvctQoSUvLkYKoWAAk2QlQiilrM2a6/ulzFgdcLUJfTvs4XQ/3eZhHiBmmEojbjmM4AzZj8JA==
+  /vue-loader/15.2.1:
+    dependencies:
+      '@vue/component-compiler-utils': 1.3.0
+      hash-sum: 1.0.2
+      loader-utils: 1.1.0
+      vue-hot-reload-api: 2.3.0
+      vue-style-loader: 4.1.0
+    dev: false
+    peerDependencies:
+      css-loader: '*'
+      vue-template-compiler: ^2.0.0
+    resolution:
+      integrity: sha512-xmfRkS6N5pW1m4t/gJIezm2SCZXEuwwyXl32imTfDkokGE6oyu1tO7Af1RFkDh7FPFq2nbz3RHUpSbjlh2nPcg==
   /vue-style-loader/4.1.0:
     dependencies:
       hash-sum: 1.0.2
@@ -4606,6 +4691,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-ZbuhCcF/hTYmldoUOVcu2fcbeSAZnfzwDskGduOrnjBiIWHgELAd+R8nAtX80aZkceWDKGQ6N9/0/EUpt+l22A==
+  /vue-template-es2015-compiler/1.6.0:
+    dev: false
+    resolution:
+      integrity: sha512-x3LV3wdmmERhVCYy3quqA57NJW7F3i6faas++pJQWtknWT+n7k30F4TVdHvCLn48peTJFRvCpxs3UuFPqgeELg==
   /vue/2.5.16:
     dev: false
     resolution:
@@ -4821,6 +4910,7 @@ registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 7
 shrinkwrapVersion: 3
 specifiers:
+  autoprefixer: ^8.5.1
   cache-loader: ^1.2.2
   chalk: ^2.4.1
   commander: ^2.15.1
@@ -4834,6 +4924,7 @@ specifiers:
   tmp: ^0.0.33
   url-loader: ^1.0.1
   vue: ^2.5.16
+  vue-loader: ^15.2.1
   vue-style-loader: ^4.1.0
   vue-template-compiler: ^2.5.16
   webpack: ^4.8.3
