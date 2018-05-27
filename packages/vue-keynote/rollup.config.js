@@ -1,6 +1,9 @@
 import resolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
-import VuePlugin from 'rollup-plugin-vue'
+import replace from 'rollup-plugin-replace'
+import vue from 'rollup-plugin-vue'
+
+process.env.NODE_ENV = 'production'
 
 export default {
   input: './index.browser.js',
@@ -16,7 +19,8 @@ export default {
   plugins: [
     resolve(),
     commonjs(),
-    VuePlugin()
+    replace({ 'process.env.NODE_ENV': '"production"' }),
+    vue()
   ],
   external: ['vue']
 }
