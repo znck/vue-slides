@@ -1,6 +1,6 @@
 {
   "name": "@keynote/core",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Keynote base framework",
   "main": "dist/index.js",
   "scripts": {
