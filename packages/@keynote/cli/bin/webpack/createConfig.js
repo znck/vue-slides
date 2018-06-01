@@ -57,7 +57,7 @@ module.exports = function createBaseConfig({
   function cached(rule) {
     rule
       .use('cache-loader')
-      .loader('cache-loader')
+      .loader(require.resolve('cache-loader'))
       .options({
         cacheDirectory,
         cacheIdentifier

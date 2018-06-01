@@ -1,4 +1,6 @@
 dependencies:
+  '@keynote/core': 1.0.2
+  '@keynote/theme-default': 1.0.2
   autoprefixer: 8.5.2
   cache-loader: 1.2.2
   chalk: 2.4.1
@@ -21,6 +23,23 @@ dependencies:
   webpack-hot-client: 3.0.0
   webpack-serve: 1.0.2
 packages:
+  /@keynote/core/1.0.2:
+    dependencies:
+      '@znck/prop-types': 0.3.4
+      de-indent: 1.0.2
+      hammerjs: 2.0.8
+      prismjs: 1.14.0
+      resize-observer-polyfill: 1.5.0
+      velocity-animate: 1.5.1
+    dev: false
+    peerDependencies:
+      vue: ^2.5.16
+    resolution:
+      integrity: sha512-7noB84M6olcHMHkefQuPZvuNQciLW3uxI+zUSJhjwK1/1SmiNldujUGRhWVL2xIj04pbg9ieGJMHNEERrSBakA==
+  /@keynote/theme-default/1.0.2:
+    dev: false
+    resolution:
+      integrity: sha512-4pEorFmMJyKdkziITVSy6DozeO09i7ozVPyPuQ5ZFfaT+QcN5g6X1MpvX9MDv/ip5dZyS8k/BZ4aoO01tHeTQg==
   /@shellscape/koa-send/4.1.3:
     dependencies:
       debug: 2.6.9
@@ -202,7 +221,7 @@ packages:
   /@webpack-contrib/schema-utils/1.0.0-beta.0:
     dependencies:
       ajv: 6.5.0
-      ajv-keywords: /ajv-keywords/3.2.0/ajv@6.5.0
+      ajv-keywords: 3.2.0
       chalk: 2.4.1
       strip-ansi: 4.0.0
       text-table: 0.2.0
@@ -214,6 +233,13 @@ packages:
       webpack: ^3.0.0 || ^4.0.0
     resolution:
       integrity: sha512-LonryJP+FxQQHsjGBi6W786TQB1Oym+agTpY0c+Kj8alnIw+DLUJb6SI8Y1GHGhLCH1yPRrucjObUmxNICQ1pg==
+  /@znck/prop-types/0.3.4:
+    dependencies:
+      lodash-es: 4.17.10
+      nyc: 11.9.0
+    dev: false
+    resolution:
+      integrity: sha512-TAaBr9Th6HF6MzQ3/MDVChEHMJ0EH7jj/4p3bp0GxqOzsn4HQxgceBBZ0DE0vshDUprA9d8USqlwzTKKepcnpg==
   /accepts/1.3.5:
     dependencies:
       mime-types: 2.1.18
@@ -235,9 +261,14 @@ packages:
       node: '>=0.4.0'
     resolution:
       integrity: sha512-QatFQ4C0n+PLqemyC6zXEv04tSqRR0hRqe+uGKPEVgKe2G8kl8wJvHzRYWwz6vqqEqt6idPVMFojZ4P1zlyAzQ==
+  /ajv-keywords/3.2.0:
+    dev: false
+    peerDependencies:
+      ajv: ^6.0.0
+    resolution:
+      integrity: sha1-6GuBnGAs+IIa1jdBNpjx3sAhhHo=
   /ajv-keywords/3.2.0/ajv@6.5.0:
-    dependencies:
-      ajv: 6.5.0
+    dependencies: {}
     dev: false
     id: registry.npmjs.org/ajv-keywords/3.2.0
     peerDependencies:
@@ -793,6 +824,15 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-T6kXw+WclKAEzWH47lCdplFocUM=
+  /clipboard/2.0.1:
+    dependencies:
+      good-listener: 1.2.2
+      select: 1.1.2
+      tiny-emitter: 2.0.2
+    dev: false
+    optional: true
+    resolution:
+      integrity: sha512-7yhQBmtN+uYZmfRjjVjKa0dZdWuabzpSKGtyQZN+9C8xlC788SSJjOHWh7tzurfwTqTD5UDYAhIv5fRJg3sHjQ==
   /clipboardy/1.2.3:
     dependencies:
       arch: 2.1.0
@@ -1273,6 +1313,11 @@ packages:
     dev: false
     resolution:
       integrity: sha1-yY2bzvdWdBiOEQlpFRGZ45sfppM=
+  /delegate/3.2.0:
+    dev: false
+    optional: true
+    resolution:
+      integrity: sha512-IofjkYBZaZivn0V8nnsMJGBr4jVLxHDheKSW88PyxS5QC4Vo9ZbZVvhzlSxY87fVq3STR6r+4cGepyHkcWOQSw==
   /delegates/1.0.0:
     dev: false
     resolution:
@@ -1784,6 +1829,13 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha1-sxnA3UYH81PzvpzKTHL8FIxJ9EU=
+  /good-listener/1.2.2:
+    dependencies:
+      delegate: 3.2.0
+    dev: false
+    optional: true
+    resolution:
+      integrity: sha1-1TswzfkxPf+33JoNR3CWqm0UXFA=
   /got/6.7.1:
     dependencies:
       create-error-class: 3.0.2
@@ -1808,6 +1860,12 @@ packages:
       node: '>=0.4.0'
     resolution:
       integrity: sha1-Dovf5NHduIVNZOBOp8AOKgJuVlg=
+  /hammerjs/2.0.8:
+    dev: false
+    engines:
+      node: '>=0.8.0'
+    resolution:
+      integrity: sha1-BO93hiz/K7edMPdpIJWTAiK/YPE=
   /has-ansi/2.0.0:
     dependencies:
       ansi-regex: 2.1.1
@@ -2560,6 +2618,10 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha1-K1aLJl7slExtnA3pw9u7ygNUzY4=
+  /lodash-es/4.17.10:
+    dev: false
+    resolution:
+      integrity: sha512-iesFYPmxYYGTcmQK0sL8bX3TGHyM6b2qREaB4kamHfQyfPJP0xgoGxp19nsH16nsfquLdiyKyX3mQkfiSGV8Rg==
   /lodash.camelcase/4.3.0:
     dev: false
     resolution:
@@ -3009,6 +3071,38 @@ packages:
     dev: false
     resolution:
       integrity: sha1-b2gragJ6Tp3fpFZM0lidHU5mnt4=
+  /nyc/11.9.0:
+    bundledDependencies:
+      - archy
+      - arrify
+      - caching-transform
+      - convert-source-map
+      - debug-log
+      - default-require-extensions
+      - find-cache-dir
+      - find-up
+      - foreground-child
+      - glob
+      - istanbul-lib-coverage
+      - istanbul-lib-hook
+      - istanbul-lib-instrument
+      - istanbul-lib-report
+      - istanbul-lib-source-maps
+      - istanbul-reports
+      - md5-hex
+      - merge-source-map
+      - micromatch
+      - mkdirp
+      - resolve-from
+      - rimraf
+      - signal-exit
+      - spawn-wrap
+      - test-exclude
+      - yargs
+      - yargs-parser
+    dev: false
+    resolution:
+      integrity: sha512-w8OdJAhXL5izerzZMdqzYKMj/pgHJyY3qEPYBjLLxrhcVoHEY9pU5ENIiZyCgG9OR7x3VcUMoD40o6PtVpfR4g==
   /object-assign/4.1.1:
     dev: false
     engines:
@@ -3607,6 +3701,12 @@ packages:
     dev: false
     resolution:
       integrity: sha1-X0+HyPkeWuPzuoerTPXgOxoX8aM=
+  /prismjs/1.14.0:
+    dev: false
+    optionalDependencies:
+      clipboard: 2.0.1
+    resolution:
+      integrity: sha512-sa2s4m60bXs+kU3jcuUwx3ZCrUH7o0kuqnOOINbODqlRrDB7KY8SRx+xR/D7nHLlgfDdG7zXbRO8wJ+su5Ls0A==
   /process-nextick-args/2.0.0:
     dev: false
     resolution:
@@ -3908,6 +4008,10 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-UpyczvJzgK3+yaL5ZbZJu+5jZBg=
+  /resize-observer-polyfill/1.5.0:
+    dev: false
+    resolution:
+      integrity: sha512-M2AelyJDVR/oLnToJLtuDJRBBWUGUvvGigj1411hXhAdyFWqMaqHp7TixW3FpiLuVaikIcR1QL+zqoJoZlOgpg==
   /resolve-cwd/2.0.0:
     dependencies:
       resolve-from: 3.0.0
@@ -3983,7 +4087,7 @@ packages:
   /schema-utils/0.4.5:
     dependencies:
       ajv: 6.5.0
-      ajv-keywords: /ajv-keywords/3.2.0/ajv@6.5.0
+      ajv-keywords: 3.2.0
     dev: false
     engines:
       node: '>= 4.8.0 || >= 6.9.0 || >= 8.9.0'
@@ -3991,6 +4095,11 @@ packages:
       webpack: ^2.0.0 || ^3.0.0 || ^4.0.0
     resolution:
       integrity: sha512-yYrjb9TX2k/J1Y5UNy3KYdZq10xhYcF8nMpAW6o3hy6Q8WSIEf9lJHG/ePnOBfziPM3fvQwfOwa13U/Fh8qTfA==
+  /select/1.1.2:
+    dev: false
+    optional: true
+    resolution:
+      integrity: sha1-DnNQrN7ICxEIUoeG7B1EGNEbOW0=
   /semver-diff/2.1.0:
     dependencies:
       semver: 5.5.0
@@ -4382,6 +4491,11 @@ packages:
       node: '>=0.6.0'
     resolution:
       integrity: sha512-YvC1SV1XdOUaL6gx5CoGroT3Gu49pK9+TZ38ErPldOWW4j49GI1HKs9DV+KGq/w6y+LZ72W1c8cKz2vzY+qpzg==
+  /tiny-emitter/2.0.2:
+    dev: false
+    optional: true
+    resolution:
+      integrity: sha512-2NM0auVBGft5tee/OxP4PI3d8WItkDM+fPnaRAVo6xTDI2knbz9eC5ArWGqtGlYqiH3RU5yMpdyTTO7MguC4ow==
   /tmp/0.0.33:
     dependencies:
       os-tmpdir: 1.0.2
@@ -4664,6 +4778,10 @@ packages:
       node: '>= 0.8'
     resolution:
       integrity: sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=
+  /velocity-animate/1.5.1:
+    dev: false
+    resolution:
+      integrity: sha512-VJ3csMz5zP1ifkbBlsNYpxnoWkPHfVRQ8tUongS78W5DxSGHB68pjYHDTgUYBkVM7P/HpYdVukgVUFcxjr1gGg==
   /vendors/1.0.2:
     dev: false
     resolution:
@@ -4916,6 +5034,8 @@ registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 7
 shrinkwrapVersion: 3
 specifiers:
+  '@keynote/core': ^1.0.0
+  '@keynote/theme-default': ^1.0.0
   autoprefixer: ^8.5.1
   cache-loader: ^1.2.2
   chalk: ^2.4.1

@@ -46,9 +46,7 @@
     "webpack": "^4.8.3",
     "webpack-chain": "^4.8.0",
     "webpack-hot-client": "^3.0.0",
-    "webpack-serve": "^1.0.2"
-  },
-  "peerDependencies": {
+    "webpack-serve": "^1.0.2",
     "@keynote/core": "^1.0.0",
     "@keynote/theme-default": "^1.0.0"
   }
