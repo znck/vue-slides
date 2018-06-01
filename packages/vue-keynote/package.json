@@ -40,6 +40,6 @@
     "vue-template-compiler": "^2.5.16"
   },
   "peerDependencies": {
-    "@keynote/cli": "^1.0.4"
+    "@keynote/cli": "^1.*"
   }
 }

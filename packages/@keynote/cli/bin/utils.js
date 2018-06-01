@@ -14,11 +14,12 @@ const parseFrontmatter = content => {
 }
 
 const createEntryFileContent = ({
+  vue,
   keynote,
   theme,
   filename
 }) => `
-import Vue from 'vue'
+import Vue from '${Vue}'
 import Keynote from '${keynote}'
 import Theme from '${theme}'
 
@@ -30,7 +31,12 @@ import Presentation from '${filename}'
 new Vue(Presentation).$mount('#app')
 `
 
-function createWebpackConfig({ file, theme, debug, outDir }) {
+function createWebpackConfig({
+  file,
+  theme,
+  debug,
+  outDir
+}) {
   const path = require('path')
   const fs = require('fs')
   file = path.resolve(file)
@@ -49,6 +55,9 @@ function createWebpackConfig({ file, theme, debug, outDir }) {
   ]
   fs.writeFileSync(entry.fd, createEntryFileContent({
     filename: file,
+    vue: require.resolve('vue', {
+      paths
+    }),
     keynote: process.env.KEYNOTE_MODULE_PATH || require.resolve('@keynote/core', {
       paths
     }),
@@ -63,9 +72,13 @@ function createWebpackConfig({ file, theme, debug, outDir }) {
   })
   config.entry('keynote').add('~keynote.js').end()
   config.resolve.alias.set('~keynote.js', entry.name)
-  
+
   return config
 }
 
 
-module.exports = { parseFrontmatter, createEntryFileContent, createWebpackConfig }
+module.exports = {
+  parseFrontmatter,
+  createEntryFileContent,
+  createWebpackConfig
+}
