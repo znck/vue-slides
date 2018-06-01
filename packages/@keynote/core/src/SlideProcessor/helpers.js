@@ -23,6 +23,33 @@ export const isBuild = typeofvnode(/^build$/i)
 export const isTruthy = it => !!it
 export const isComponent = any => any && !!any.tag
 
+export function copyVnode(cloned, vnode) {
+  cloned.tag = vnode.tag
+  cloned.data = { ...vnode.data }
+  cloned.children = vnode.children ? vnode.children.slice() : []
+  cloned.text = vnode.text
+  cloned.elm = vnode.elm
+  cloned.context = vnode.context
+  cloned.componentOptions = vnode.componentOptions
+  cloned.asyncFactory = vnode.asyncFactory
+  cloned.isComment = vnode.isComment
+  cloned.ns = vnode.ns
+  cloned.isStatic = vnode.isStatic
+  cloned.key = vnode.key
+  cloned.isComment = vnode.isComment
+  cloned.fnContext = vnode.fnContext
+  cloned.fnOptions = vnode.fnOptions
+  cloned.fnScopeId = vnode.fnScopeId
+  cloned.isCloned = true
+  cloned._hasChildren = vnode._hasChildren
+
+  if (cloned.componentOptions) {
+    cloned.componentOptions.children = vnode.componentOptions.children ? vnode.componentOptions.children.slice() : []
+  }
+
+  return cloned
+}
+
 export class Graph {
   constructor() {
     this.vertices = []
@@ -104,6 +131,7 @@ export function prepareSlides(h, vnodes) {
   let index = 0
   const slides = vnodes.map((it, itIndex) => {
     if (isComponent(it)) {
+      it = copyVnode(h(null), it)
       it.key = `wrapper:${itIndex}`
 
       const attrs = (it.data && it.data.attrs) || {}

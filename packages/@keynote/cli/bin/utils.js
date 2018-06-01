@@ -49,7 +49,7 @@ function createWebpackConfig({ file, theme, debug, outDir }) {
   ]
   fs.writeFileSync(entry.fd, createEntryFileContent({
     filename: file,
-    keynote: require.resolve('@keynote/core', {
+    keynote: process.env.KEYNOTE_MODULE_PATH || require.resolve('@keynote/core', {
       paths
     }),
     theme: require.resolve(theme, {

@@ -82,8 +82,15 @@ export const TransitionDissolve = {
 }
 
 Velocity.Easings.drop = t => {
-  const p = 0.3
-  return Math.pow(2, -10 * t) * Math.sin((t - p / 4) * (2 * Math.PI) / p) + 1
+  if (t < .4) {
+    return 1 - 6.25 * t * t
+  }
+  else if (t < .8) {
+    return 0.25 - 6.25 * (t - .6) * (t - .6)
+  }
+  else {
+    return 0.125 - 6.25 * (t - .9) * (t - .9)
+  }
 }
 export const TransitionDrop = {
   extends: Transition,
@@ -95,7 +102,7 @@ export const TransitionDrop = {
       if (this.skipTransition) return done()
       Velocity(
         el,
-        { translateY: ['0%', 'drop', '-100%'], translateZ: [0, 0] },
+        { translateY: ['-100%', 'drop', '0%'], translateZ: [0, 0] },
         { duration: this.duration, complete: done }
       )
     }

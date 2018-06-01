@@ -1,18 +1,14 @@
 <template>
   <div class="slideshow">
-    <component 
-      v-if="keynote.activeSlide" 
-      v-bind="transition"
-      ref="transition"
+    <component v-if="slide && transition.component" :is="transition.component"
+      key="transition"
+      v-bind="transition" :skip-transition="skipTransition"
       @after-enter="afterSlideEnter"
-      :is="transition.component" key="transition"
-      :skip-transition="skipTransition"
     >
-      <Vnode :vnode="keynote.activeSlide.vnode" :key="keynote.activeSlide.index"/>
+      <Vnode :vnode="slide.vnode" :key="slideIndex"/>
     </component>
-    <PreLoad>
-      <Vnode v-for="slide in keynote.slides" :vnode="(slide.vnode)" :key="slide.index"/>
-    </PreLoad>
+    <slot />
+    <slot name="controls" />
   </div>
 </template>
 
@@ -20,12 +16,11 @@
 const NoopTransition = { component: 'transition-noop' }
 
 export default {
-  name: 'Slideshow',
-  inject: ['keynote'],
+  props: ['slide', 'slideIndex'],
 
   data() {
-    const transition = this.keynote.activeSlide
-      ? this.keynote.activeSlide.transition
+    const transition = this.slide
+      ? this.slide.transition
       : NoopTransition
 
     return {
@@ -45,23 +40,15 @@ export default {
       })
     }
   },
-  components: {
-    PreLoad: {
-      provide: { preloading: true },
-      render(h) {
-        return h('div', { style: { display: 'none' } }, this.$slots.default)
-      }
-    }
-  },
   watch: {
-    'keynote.activeSlide'(slide) {
+    'slide'(slide) {
       this.nextTransition = slide ? slide.transition : NoopTransition
     }
   }
 }
 </script>
 
-<style>
+<style scoped>
 .slideshow {
   width: 100%;
   height: 100%;

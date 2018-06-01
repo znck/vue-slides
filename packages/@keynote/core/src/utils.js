@@ -2,7 +2,7 @@
 export const throttle = (fn, threshhold = 250, scope) => {
   let last = null
   let deferTimer
-  return function(...args) {
+  return function (...args) {
     const context = scope || this
 
     const now = Date.now()
@@ -20,6 +20,44 @@ export const throttle = (fn, threshhold = 250, scope) => {
     } else {
       last = null
       fn.apply(context, args)
+    }
+  }
+}
+
+export function createContext(data) {
+  const KEY = new Symbol(Object.keys(data).join('-'))
+
+  return {
+    Provider: {
+      props: {
+        value: {
+          required: true
+        }
+      },
+      provide() {
+        return {
+          KEY: this.providedData
+        }
+      },
+      data() {
+        return {
+          providedData: this.props.value
+        }
+      },
+      render() {
+        return this.$slots.default[0]
+      },
+      watch: {
+        value(value) {
+          this.providedData = value
+        }
+      }
+    },
+    Consumer: {
+      inject: [KEY],
+      render() {
+        return this.$scopedSlots.default(this.[KEY])
+      }
     }
   }
 }

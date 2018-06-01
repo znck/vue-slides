@@ -1,5 +1,5 @@
 <template>
-  <Vnode v-if="(isVisible && !isWaiting) || preloading" 
+  <Vnode v-if="(isVisible && !isWaiting)" 
     :vnode="$slots.default[0]" 
     @done="onTransitionComplete" 
     @after-enter="onTransitionComplete"
@@ -16,12 +16,6 @@ const events = new Vue({})
 export default {
   name: 'Build',
   keynote: 'build',
-  inject: {
-    keynote: 'keynote',
-    preloading: {
-      default: false
-    }
-  },
   props: {
     name: String,
     with: String,
@@ -56,7 +50,7 @@ export default {
   },
   computed: {
     build() {
-      return this.keynote.buildStep
+      return this.$store.state.control.currentStep
     },
     isVisible() {
       return this.step < this.build
