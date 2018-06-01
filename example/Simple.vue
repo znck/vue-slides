@@ -77,7 +77,9 @@
     <TitleSlide title="Next Swap" transition="swap" />
     <TitleSlide title="Next Switch" transition="switch" />
     <TitleSlide title="Next Twirl" transition="twirl" />
-    <TitleSlide title="Fin." />
+    <TitleSlide title="Fin.">
+      <a href="https://keynote.sh">Go to keynote.sh</a>
+    </TitleSlide>
     
   </Keynote>
 </template>

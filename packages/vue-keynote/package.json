@@ -31,6 +31,9 @@
     "dist/",
     "index.js"
   ],
+  "bin": {
+    "keynote": "keynote.js"
+  },
   "devDependencies": {
     "rollup": "^0.59.3",
     "rollup-plugin-commonjs": "^9.1.3",
