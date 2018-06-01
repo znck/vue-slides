@@ -24,7 +24,7 @@ program
   .option('-p, --theme <theme>', 'use specified theme (default: @keynote/theme-default)')
   .option('--debug', 'build in development mode for debugging')
   .action((file = 'keynote.vue', { debug, dest, theme }) => {
-    const outDir = dest ? path.resolve(dest) : null
+    const outDir = dest ? require('path').resolve(dest) : null
     wrapCommand(require('./build'))({ file, debug, outDir, theme })
   })
 
