@@ -7,7 +7,7 @@
     "test": "jest",
     "build": "vuepack src",
     "prebuild": "rm -rf dist",
-    "prepublishOnly": "pnpm run build"
+    "prepublish": "pnpm run build"
   },
   "repository": {
     "type": "git",

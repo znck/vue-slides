@@ -7,7 +7,7 @@
     "test": "jest",
     "build": "vuec src",
     "prebuild": "rm -rf dist",
-    "prepublishOnly": "npm run build"
+    "prepublish": "npm run build"
   },
   "author": "Rahul Kadyan <hi@znck.me> (https://znck.me)",
   "license": "MIT",

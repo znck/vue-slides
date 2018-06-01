@@ -6,7 +6,7 @@
   "unpkg": "dist/keynote.js",
   "scripts": {
     "build": "rollup -c",
-    "prepublishOnly": "pnpm run build"
+    "prepublish": "pnpm run build"
   },
   "repository": {
     "type": "git",
