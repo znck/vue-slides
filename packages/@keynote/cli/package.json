@@ -1,6 +1,6 @@
 {
   "name": "@keynote/cli",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "description": "CLI for creating Keynotes using Vue ",
   "bin": {
     "keynote": "bin/keynote.js"
