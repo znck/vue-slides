@@ -55,7 +55,7 @@ function createWebpackConfig({
   ]
   fs.writeFileSync(entry.fd, createEntryFileContent({
     filename: file,
-    vue: require.resolve('vue', {
+    vue: require.resolve('vue/dist/vue.runtime.esm.js', {
       paths
     }),
     keynote: process.env.KEYNOTE_MODULE_PATH || require.resolve('@keynote/core', {
