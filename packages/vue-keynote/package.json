@@ -29,10 +29,11 @@
   },
   "files": [
     "dist/",
+    "keynote.js",
     "index.js"
   ],
   "bin": {
-    "keynote": "keynote.js"
+    "keynote": "./keynote.js"
   },
   "devDependencies": {
     "rollup": "^0.59.3",
