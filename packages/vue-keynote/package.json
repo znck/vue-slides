@@ -5,8 +5,7 @@
   "main": "index.js",
   "unpkg": "dist/keynote.js",
   "scripts": {
-    "build": "rollup -c",
-    "prepublish": "pnpm run build"
+    "build": "rollup -c"
   },
   "repository": {
     "type": "git",

@@ -6,8 +6,7 @@
   "scripts": {
     "test": "jest",
     "build": "vuepack src",
-    "prebuild": "rm -rf dist",
-    "prepublish": "pnpm run build"
+    "prebuild": "rm -rf dist"
   },
   "repository": {
     "type": "git",
@@ -37,7 +36,6 @@
     "vue": "^2.5.16"
   },
   "devDependencies": {
-    "vue": "^2.5.16",
-    "vuepack": "^0.3.0"
+    "vue": "^2.5.16"
   }
 }

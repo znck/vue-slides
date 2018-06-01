@@ -2,7 +2,8 @@
   "private": true,
   "scripts": {
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "release": "lerna exec pnpm run build && lerna publish"
   },
   "prettier": {
     "semi": false,

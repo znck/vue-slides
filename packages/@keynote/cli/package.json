@@ -6,7 +6,8 @@
     "keynote": "bin/keynote.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo ''"
   },
   "repository": {
     "type": "git",

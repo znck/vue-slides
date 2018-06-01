@@ -6,12 +6,8 @@
   "scripts": {
     "test": "jest",
     "build": "vuec src",
-    "prebuild": "rm -rf dist",
-    "prepublish": "npm run build"
+    "prebuild": "rm -rf dist"
   },
   "author": "Rahul Kadyan <hi@znck.me> (https://znck.me)",
-  "license": "MIT",
-  "devDependencies": {
-    "vuepack": "^0.3.1"
-  }
+  "license": "MIT"
 }
