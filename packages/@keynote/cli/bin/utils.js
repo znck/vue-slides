@@ -19,7 +19,7 @@ const createEntryFileContent = ({
   theme,
   filename
 }) => `
-import Vue from '${Vue}'
+import Vue from '${vue}'
 import Keynote from '${keynote}'
 import Theme from '${theme}'
 
