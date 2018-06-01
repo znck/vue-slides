@@ -1,6 +1,6 @@
 {
   "name": "vue-keynote",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Present with Vue",
   "main": "index.js",
   "unpkg": "dist/keynote.js",
@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/znck/keynote#readme",
   "dependencies": {
-    "@keynote/cli": "^1.0.2",
+    "@keynote/cli": "^1.0.3",
     "@keynote/core": "^1.0.2",
     "@keynote/theme-default": "^1.0.2"
   },
