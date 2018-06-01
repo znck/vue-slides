@@ -1,6 +1,6 @@
 {
   "name": "@keynote/cli",
-  "version": "1.0.4",
+  "version": "1.0.7",
   "description": "CLI for creating Keynotes using Vue ",
   "bin": {
     "keynote": "bin/keynote.js"
@@ -26,6 +26,8 @@
   },
   "homepage": "https://keynote.sh",
   "dependencies": {
+    "@keynote/core": "^1.0.0",
+    "@keynote/theme-default": "^1.0.0",
     "autoprefixer": "^8.5.1",
     "cache-loader": "^1.2.2",
     "chalk": "^2.4.1",
@@ -46,8 +48,6 @@
     "webpack": "^4.8.3",
     "webpack-chain": "^4.8.0",
     "webpack-hot-client": "^3.0.0",
-    "webpack-serve": "^1.0.2",
-    "@keynote/core": "^1.0.0",
-    "@keynote/theme-default": "^1.0.0"
+    "webpack-serve": "^1.0.2"
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "vue-keynote",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Present with Vue",
   "main": "index.js",
   "unpkg": "dist/keynote.js",
