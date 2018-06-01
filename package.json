@@ -10,7 +10,6 @@
     "singleQuote": true
   },
   "devDependencies": {
-    "lerna": "^2.11.0",
-    "vuepress": "^0.9.0"
+    "lerna": "^2.11.0"
   }
 }
