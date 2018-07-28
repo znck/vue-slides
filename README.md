@@ -11,9 +11,16 @@
 ## Development
 
 ```bash
+# Build the command-line tool.
+cd packages/@keynote/cli 
 yarn
-yarn dev # serves an example presentation
+
+# Use the command-line tool to serve the simple example.
+cd bin
+./keynote.js dev ../../../../example/Simple.vue
 ```
+
+Go to http://localhost:8080 to view the example presentation.
 
 ## License
 
