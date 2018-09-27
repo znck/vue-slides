@@ -52,10 +52,13 @@ export default {
 .slideshow {
   width: 100%;
   height: 100%;
-  height: 100vh;
   position: relative;
   perspective: 400vw;
   background-color: black;
+}
+
+.slideshow:focus, .slideshow:focus-visible {
+  outline: none;
 }
 
 .slideshow > .slide {

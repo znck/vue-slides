@@ -226,6 +226,7 @@ packages:
       integrity: sha1-5piEdK6MlTR3v15+/s/OzNnPTIY=
   /cssesc/0.1.0:
     dev: true
+    hasBin: true
     resolution:
       integrity: sha1-yBSQPkViM3GgR3tAEJqq++6t27Q=
   /de-indent/1.0.2:
@@ -386,6 +387,7 @@ packages:
       integrity: sha1-M7QHd3VMZDJXPBIMw4CLvRDUfwQ=
   /he/1.1.1:
     dev: true
+    hasBin: true
     resolution:
       integrity: sha1-k0EP0hsAlzUVH4howvJx80J+I/0=
   /icss-replace-symbols/1.1.0:
@@ -488,10 +490,12 @@ packages:
       integrity: sha512-aUnNwqMOXw3yvErjMPSQu6qIIzUmT1e5KcU1OZxRDU1g/am6mzBvcrmLAYwzmB59BHPrh5/tKaiF4OPhqRWESQ==
   /jsesc/0.5.0:
     dev: true
+    hasBin: true
     resolution:
       integrity: sha1-597mbjXW/Bb3EP6R1c9p9w8IkR0=
   /json5/0.5.1:
     dev: true
+    hasBin: true
     resolution:
       integrity: sha1-Hq3nrMASA0rYTiOWdn6tn6VJWCE=
   /kind-of/3.2.2:
@@ -612,6 +616,7 @@ packages:
       - yargs
       - yargs-parser
     dev: false
+    hasBin: true
     resolution:
       integrity: sha512-w8OdJAhXL5izerzZMdqzYKMj/pgHJyY3qEPYBjLLxrhcVoHEY9pU5ENIiZyCgG9OR7x3VcUMoD40o6PtVpfR4g==
   /object-assign/4.1.1:
@@ -710,6 +715,7 @@ packages:
     dev: true
     engines:
       node: '>=4'
+    hasBin: true
     resolution:
       integrity: sha512-CIWJNU+cFFdeA0GJSzzFkxiq2WuMvWZMlz6cV/EXhPlRnI3esSFMh+lNmyZ8z/X8O8C1U60Sc8puXALj4/WmZw==
   /prismjs/1.14.0:
@@ -770,6 +776,7 @@ packages:
     dependencies:
       jsesc: 0.5.0
     dev: true
+    hasBin: true
     resolution:
       integrity: sha1-fuj4Tcb6eS0/0K4ijSS9lJ6tIFw=
   /remove-trailing-separator/1.1.0:
@@ -852,6 +859,7 @@ packages:
       '@types/estree': 0.0.39
       '@types/node': 10.3.0
     dev: true
+    hasBin: true
     resolution:
       integrity: sha512-ISiMqq/aJa+57QxX2MRcvLESHdJ7wSavmr6U1euMr+6UgFe6KM+3QANrYy8LQofwhTC1I7BcAdlLnDiaODs1BA==
   /select/1.1.2:
@@ -938,7 +946,7 @@ packages:
     resolution:
       integrity: sha1-HBH5IY8HYImkfdUS+TxmmaaoHVI=
 registry: 'https://registry.npmjs.org/'
-shrinkwrapMinorVersion: 7
+shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
   '@keynote/core': ^1.0.2

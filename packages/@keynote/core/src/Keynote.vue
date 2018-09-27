@@ -1,29 +1,33 @@
 <template>
-  <div class="keynote">
-    <SlideProcessor :raw-slides="$slots.default" />
+<div class="keynote" :class="[ aspectRatio && 'a' + aspectRatio ]">
+  <SlideProcessor :raw-slides="$slots.default" />
 
-    <SlideController>
-      <component
-        :is="$store.state.presenter.component" 
-        :slide="$store.state.currentSlide"
-        :slideIndex="$store.state.control.currentSlide"
-        :fullscreen="$store.state.control.isFullscreen"
-      />
-    </SlideController>
-  </div>
+  <SlideController>
+    <component
+      :is="$store.state.presenter.component" 
+      :slide="$store.state.currentSlide"
+      :slideIndex="$store.state.control.currentSlide"
+      :fullscreen="$store.state.control.isFullscreen"
+    />
+  </SlideController>
+</div>
 </template>
 
 <script>
-import SlideController from './SlideController'
-import SlideProcessor from './SlideProcessor'
-
+import SlideController from './SlideController';
+import SlideProcessor from './SlideProcessor';
 export default {
   name: 'Keynote',
+  props: {
+    aspectRatio: {
+      type: String
+    }
+  },
   components: {
-    SlideController,
-    SlideProcessor
+    SlideController: SlideController,
+    SlideProcessor: SlideProcessor
   }
-}
+};
 </script>
 
 <style>
@@ -36,6 +40,13 @@ body {
   height: 100%;
 }
 
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -43,7 +54,17 @@ body {
 
 <style scoped>
 .keynote {
-  height: 100%;
   width: 100%;
+  height: 100%;
+}
+
+.a16x9 {
+  width: 100vw;
+  height: 56.25vw;
+}
+
+.a4x3 {
+  width: 133.33vh;
+  height: 100vh;
 }
 </style>

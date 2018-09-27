@@ -80,6 +80,7 @@ packages:
       - yargs
       - yargs-parser
     dev: false
+    hasBin: true
     resolution:
       integrity: sha512-w8OdJAhXL5izerzZMdqzYKMj/pgHJyY3qEPYBjLLxrhcVoHEY9pU5ENIiZyCgG9OR7x3VcUMoD40o6PtVpfR4g==
   /prismjs/1.14.0:
@@ -111,7 +112,7 @@ packages:
     resolution:
       integrity: sha512-/ffmsiVuPC8PsWcFkZngdpas19ABm5mh2wA7iDqcltyCTwlgZjHGeJYOXkBMo422iPwIcviOtrTCUpSfXmToLQ==
 registry: 'https://registry.npmjs.org/'
-shrinkwrapMinorVersion: 7
+shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
   '@znck/prop-types': ^0.3.4
