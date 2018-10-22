@@ -1,0 +1,22 @@
+{
+  "name": "@keynote/markdown",
+  "version": "1.1.2",
+  "description": "@keynote/markdown",
+  "main": "index.js",
+  "module": "dist/markdown.esm-bundler.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keynote/keynote.git"
+  },
+  "keywords": [
+    "vue",
+    "keynote"
+  ],
+  "author": "Rahul Kadyan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/keynote/keynote/issues"
+  },
+  "homepage": "https://github.com/keynote/keynote/tree/master/packages/markdown#readme"
+}

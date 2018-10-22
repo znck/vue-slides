@@ -3,7 +3,7 @@
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "release": "lerna exec pnpm run build && lerna publish"
+    "build": "node scripts/build.js"
   },
   "prettier": {
     "semi": false,
