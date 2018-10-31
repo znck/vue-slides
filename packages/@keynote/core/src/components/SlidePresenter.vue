@@ -1,14 +1,24 @@
 <template>
   <div class="slideshow">
-    <component v-if="slide && transition.component" :is="transition.component"
+    <component
+      v-if="slide && transition.component"
+      :is="transition.component"
       key="transition"
-      v-bind="transition" :skip-transition="skipTransition"
+      v-bind="transition"
+      :skip-transition="skipTransition"
       @after-enter="afterSlideEnter"
     >
       <Vnode :vnode="slide.vnode" :key="slideIndex"/>
     </component>
-    <slot />
-    <slot name="controls" />
+    <div class="promote" v-if="!slide">
+      <p>
+        <small style="text-transform: uppercase; font-size: 1rem">built with</small>
+        <br>
+        <strong>Keynote.sh</strong>
+      </p>
+    </div>
+    <slot/>
+    <slot name="controls"/>
   </div>
 </template>
 
@@ -57,7 +67,8 @@ export default {
   background-color: black;
 }
 
-.slideshow:focus, .slideshow:focus-visible {
+.slideshow:focus,
+.slideshow:focus-visible {
   outline: none;
 }
 
@@ -70,6 +81,27 @@ export default {
   height: 100%;
   width: 100%;
 
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 0.625rem 0 rgba(0, 0, 0, 0.4);
+}
+
+.promote {
+  font-size: 3rem;
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.promote * {
+  color: white;
+  text-align: center;
 }
 </style>

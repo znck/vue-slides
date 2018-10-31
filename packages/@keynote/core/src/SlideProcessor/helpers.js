@@ -44,7 +44,9 @@ export function copyVnode(cloned, vnode) {
   cloned._hasChildren = vnode._hasChildren
 
   if (cloned.componentOptions) {
-    cloned.componentOptions.children = vnode.componentOptions.children ? vnode.componentOptions.children.slice() : []
+    cloned.componentOptions.children = vnode.componentOptions.children
+      ? vnode.componentOptions.children.slice()
+      : []
   }
 
   return cloned
@@ -57,11 +59,12 @@ export class Graph {
   }
 
   addVertex(vertex) {
-    this.vertices.push(vertex)
-    this.edges[vertex] = new Set()
+    if (this.vertices.indexOf(vertex) < 0) this.vertices.push(vertex)
+    if (!this.edges[vertex]) this.edges[vertex] = new Set()
   }
 
   addEdge(a, b) {
+    this.addVertex(a)
     this.edges[a].add(b)
   }
 
@@ -164,6 +167,8 @@ export function prepareSlides(h, vnodes) {
 
       graph.topologicalSortedVertices().forEach(name => {
         const build = buildsByName[name]
+        if (!build) return
+
         const instance = build.componentOptions.propsData
 
         if (instance.with) {

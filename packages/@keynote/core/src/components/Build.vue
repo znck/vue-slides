@@ -1,7 +1,8 @@
 <template>
-  <Vnode v-if="(isVisible && !isWaiting)" 
-    :vnode="$slots.default[0]" 
-    @done="onTransitionComplete" 
+  <Vnode
+    v-if="(isVisible && !isWaiting)"
+    :vnode="$slots.default[0]"
+    @done="onTransitionComplete"
     @after-enter="onTransitionComplete"
     @after-leave="onTransitionComplete"
   />
@@ -12,6 +13,7 @@
 import Vue from 'vue'
 
 const events = new Vue({})
+let id = 0
 
 export default {
   name: 'Build',

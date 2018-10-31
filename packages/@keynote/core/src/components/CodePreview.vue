@@ -1,10 +1,13 @@
 <script>
-import Prism from 'prismjs'
+import Prism from "prismjs";
+//other languages depend on these
+import "prismjs/components/prism-typescript";
 import deIndent from 'de-indent'
 
 const aliases = {
   vue: 'markup',
-  js: 'javascript'
+  js: 'javascript',
+  ts: 'typescript'
 }
 
 export default {

@@ -1,6 +1,6 @@
 <script>
 export default {
-  name: 'Function',
+  name: 'FunctionRenderer',
   functional: true,
   props: {
     fn: { type: Function, required: true }
