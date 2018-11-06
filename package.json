@@ -9,8 +9,15 @@
     "test:e2e": "vue-cli-service test:e2e",
     "test:unit": "vue-cli-service test:unit"
   },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
   "dependencies": {
+    "hammerjs": "^2.0.8",
     "register-service-worker": "^1.0.0",
+    "resize-observer-polyfill": "^1.5.0",
+    "screenfull": "^3.3.3",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"

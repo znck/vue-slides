@@ -1,0 +1,28 @@
+dependencies:
+  hammerjs: 2.0.8
+  resize-observer-polyfill: 1.5.0
+  screenfull: 3.3.3
+packages:
+  /hammerjs/2.0.8:
+    dev: false
+    engines:
+      node: '>=0.8.0'
+    resolution:
+      integrity: sha1-BO93hiz/K7edMPdpIJWTAiK/YPE=
+  /resize-observer-polyfill/1.5.0:
+    dev: false
+    resolution:
+      integrity: sha512-M2AelyJDVR/oLnToJLtuDJRBBWUGUvvGigj1411hXhAdyFWqMaqHp7TixW3FpiLuVaikIcR1QL+zqoJoZlOgpg==
+  /screenfull/3.3.3:
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha512-DzYUuXr+OV2BDvYXaYzlYgJd4WXZZ2CW5NFC7Kw6TUCpzXJAx4MwlVD6CH+Mu6fi8rfAQIQfqdFZ4jtDsEkWig==
+registry: 'https://registry.npmjs.org/'
+shrinkwrapMinorVersion: 9
+shrinkwrapVersion: 3
+specifiers:
+  hammerjs: ^2.0.8
+  resize-observer-polyfill: ^1.5.0
+  screenfull: ^3.3.3

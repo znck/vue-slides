@@ -34,3 +34,9 @@ npm run test:e2e
 ```
 npm run test:unit
 ```
+
+<!--
+component: Slide
+-->
+
+[__foo__ is great](use)<!--effect { | move(left) | scale(2x) | }-->

@@ -1,0 +1,23 @@
+{
+  "compileOnSave": true,
+  "include": ["src/**/*", "tests/**/*"],
+  "exclude": ["node_modules", "dist"],
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "target": "esnext",
+    "module": "es6",
+    "baseUrl": "./",
+    "strict": false,
+    "noImplicitAny": false,
+    "checkJs": false,
+    "sourceMap": true,
+    "paths": {
+      "@keynote": ["src/index.js"],
+      "@components": ["src/components/index.js"],
+      "@components/*": ["src/components/*"],
+      "@state/*": ["src/state/*"],
+      "@views/*": ["src/router/views/*"]
+    }
+  }
+}

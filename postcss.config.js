@@ -1,5 +1,6 @@
 module.exports = {
-  plugins: {
-    autoprefixer: {}
-  }
-};
+  plugins: [
+    require('autoprefixer')({}),
+    require('./packages/postcss-kem-unit')({})
+  ]
+}
