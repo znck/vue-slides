@@ -1,0 +1,25 @@
+{
+  "name": "@keynote/plugin-touch",
+  "version": "1.1.3",
+  "description": "@keynote/plugin-touch",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keynote/keynote.git"
+  },
+  "keywords": [
+    "keynote",
+    "vue"
+  ],
+  "author": "Rahul Kadyan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/keynote/keynote/issues"
+  },
+  "homepage": "https://github.com/keynote/keynote/tree/dev/packages/plugin-touch#readme",
+  "dependencies": {
+    "@keynote/state": "link:../state",
+    "hammerjs": "^2.0.8",
+    "screenfull": "^3.3.3"
+  }
+}

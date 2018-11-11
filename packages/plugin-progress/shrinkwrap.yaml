@@ -1,0 +1,8 @@
+dependencies:
+  '@keynote/postcss-kem-unit': 'link:../postcss-kem-unit'
+  '@keynote/state': 'link:../state'
+registry: 'https://registry.npmjs.org/'
+shrinkwrapMinorVersion: 9
+shrinkwrapVersion: 3
+specifiers:
+  '@keynote/postcss-kem-unit': ^1.1.3

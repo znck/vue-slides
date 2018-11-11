@@ -1,0 +1,18 @@
+dependencies:
+  vue: 2.5.17
+  vuex: 3.0.1
+packages:
+  /vue/2.5.17:
+    dev: false
+    resolution:
+      integrity: sha512-mFbcWoDIJi0w0Za4emyLiW72Jae0yjANHbCVquMKijcavBGypqlF7zHRgMa5k4sesdv7hv2rB4JPdZfR+TPfhQ==
+  /vuex/3.0.1:
+    dev: false
+    resolution:
+      integrity: sha512-wLoqz0B7DSZtgbWL1ShIBBCjv22GV5U+vcBFox658g6V0s4wZV9P4YjCNyoHSyIBpj1f29JBoNQIqD82cR4O3w==
+registry: 'https://registry.npmjs.org/'
+shrinkwrapMinorVersion: 9
+shrinkwrapVersion: 3
+specifiers:
+  vue: ^2.5.17
+  vuex: ^3.0.1

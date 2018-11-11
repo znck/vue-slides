@@ -1,0 +1,53 @@
+#keynote {
+  /* Tier 0 */
+  --color: #fff;
+  --text-color: rgba(0, 0, 0, .87);
+  --text-color-disabled: rgba(0, 0, 0, .3);
+  
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+  Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+  'Segoe UI Symbol';
+
+  --color-primary: var(--color);
+
+  --text-color-primary: var(--text-color);
+  --text-color-primary-disabled: var(--text-color-disabled);
+  --text-font-primary: var(--font-family-sans-serif);
+}
+
+#keynote-presentation {
+  /* Tier 1 (scope: presentation) */
+}
+
+#keynote-presenter {
+  /* Tier 1 (scope: presenter) */
+}
+
+#keynote-overview {
+  /* Tier 1 (scope: overview) */
+}
+
+.keynote-slide {
+  font-family: var(--text-font-primary);
+  
+  /* Tier 2 */
+  --slide--Background: var(--color-primary);
+
+  --slide--body--Padding: 3.854167kem 6.770834kem; /* 74pt 130pt */
+  
+  --slide--content--Margin: 0;
+  --slide--content--Color: var(--text-color-primary);
+  --slide--content--FontSize: 2kem;
+
+  --slide--title--Color: var(--text-color-primary);
+  --slide--title--FontFamily: var(--text-font-primary);
+  --slide--title--FontSize: 5.833333kem; /* 112pt */
+  --slide--title--FontWeight: 500;
+  --slide--title--TextAlign: center;
+  
+  --slide--subtitle--Color: var(--text-color-primary);
+  --slide--subtitle--FontFamily: var(--text-font-primary);
+  --slide--subtitle--FontSize: 2.8125kem; /* 54pt */
+  --slide--subtitle--FontWeight: 400;
+  --slide--subtitle--TextAlign: center;
+}

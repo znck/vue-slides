@@ -13,11 +13,7 @@
     "checkJs": false,
     "sourceMap": true,
     "paths": {
-      "@keynote": ["src/index.js"],
-      "@components": ["src/components/index.js"],
-      "@components/*": ["src/components/*"],
-      "@state/*": ["src/state/*"],
-      "@views/*": ["src/router/views/*"]
+      "@keynote/*": ["packages/*"] 
     }
   }
 }

@@ -1,0 +1,24 @@
+dependencies:
+  '@keynote/state': 'link:../state'
+  hammerjs: 2.0.8
+  screenfull: 3.3.3
+packages:
+  /hammerjs/2.0.8:
+    dev: false
+    engines:
+      node: '>=0.8.0'
+    resolution:
+      integrity: sha1-BO93hiz/K7edMPdpIJWTAiK/YPE=
+  /screenfull/3.3.3:
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha512-DzYUuXr+OV2BDvYXaYzlYgJd4WXZZ2CW5NFC7Kw6TUCpzXJAx4MwlVD6CH+Mu6fi8rfAQIQfqdFZ4jtDsEkWig==
+registry: 'https://registry.npmjs.org/'
+shrinkwrapMinorVersion: 9
+shrinkwrapVersion: 3
+specifiers:
+  '@keynote/state': 'link:../state'
+  hammerjs: ^2.0.8
+  screenfull: ^3.3.3

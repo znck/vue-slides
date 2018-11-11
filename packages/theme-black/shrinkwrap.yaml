@@ -1,0 +1,8 @@
+dependencies:
+  '@keynote/theme-base': 'link:../theme-base'
+  '@keynote/theme-black': 'link:../theme-base'
+registry: 'https://registry.npmjs.org/'
+shrinkwrapMinorVersion: 9
+shrinkwrapVersion: 3
+specifiers:
+  '@keynote/theme-base': 'link:../theme-base'

@@ -1,0 +1,13 @@
+dependencies:
+  '@keynote/cli': 'link:../packages/cli'
+  '@keynote/theme-black': 'link:../packages/theme-black'
+  '@keynote/theme-vue': 'link:../packages/theme-black'
+  '@keynote/theme-white': 'link:../packages/theme-white'
+registry: 'https://registry.npmjs.org/'
+shrinkwrapMinorVersion: 9
+shrinkwrapVersion: 3
+specifiers:
+  '@keynote/cli': 'link:../packages/cli'
+  '@keynote/theme-black': 'link:../packages/theme-black'
+  '@keynote/theme-vue': 'link:../packages/theme-black'
+  '@keynote/theme-white': 'link:../packages/theme-white'
