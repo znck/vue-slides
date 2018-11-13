@@ -64,9 +64,9 @@ export default {
   --progress-widget-font-family: var(--text-font-primary);
   --progress-widget-font-size: 1.25kem;
 
-  --progress-widget-track-size: 0.125kem;
-  --progress-widget-foreground: var(--text-color-primary);
-  --progress-widget-background: var(--text-color-primary-disabled);
+  --progress-widget-track-size: var(--global-progress-widget-track-size, 0.125kem);
+  --progress-widget-foreground: var(--global-progress-widget-foreground, var(--text-color-primary));
+  --progress-widget-background: var(--global-progress-widget-background, var(--text-color-primary-disabled));
 }
 </style>
 

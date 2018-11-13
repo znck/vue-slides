@@ -1,5 +1,14 @@
 #keynote {
-  --color: #000;
-  --text-color: rgba(255, 255, 255, 0.87);
+  --color: white;
+  --text-color: rgb(44,62,80, 0.87);
   --font-family-sans-serif: 'Helvetica Neue';
+}
+
+#keynote-presentation {
+  --global-progress-widget-background: #dedede;
+  --global-progress-widget-foreground: rgb(66,185,131);
+}
+
+.keynote-slide {
+  --slide--title--Color: rgb(66,185,131, 0.87);
 }

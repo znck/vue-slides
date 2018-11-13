@@ -7,6 +7,18 @@ function getModulePaths() {
     .concat('node_modules')
 }
 
+function resolveFirst(packages, paths) {
+  for (const pkg of packages) {
+    try {
+      return require.resolve(pkg, { paths })
+    } catch (e) {
+      // --
+    }
+  }
+
+  return packages.shift()
+}
+
 module.exports = function createBaseConfig({ outDir, debug, theme }) {
   const CSSExtractPlugin = require('mini-css-extract-plugin')
   const { VueLoaderPlugin } = require('vue-loader')
@@ -16,6 +28,11 @@ module.exports = function createBaseConfig({ outDir, debug, theme }) {
 
   const config = new WebpackChain()
   const inlineLimit = 1000000
+  const modulePaths = getModulePaths()
+
+  if (!theme.startsWith('@keynote/theme') && !theme.startsWith('keynote-theme-')) {
+    theme = resolveFirst([theme, `@keynote/theme-${theme}`, `keynote-theme-${theme}`], modulePaths)
+  }
 
   config.mode(isProd ? 'production' : 'development')
   config.output
@@ -32,8 +49,6 @@ module.exports = function createBaseConfig({ outDir, debug, theme }) {
   } else if (!isProd) {
     config.devtool('cheap-module-eval-source-map')
   }
-
-  const modulePaths = getModulePaths()
 
   config.resolve.extensions.merge(['.js', '.vue', '.json'])
   config.resolve.modules.merge(modulePaths)
