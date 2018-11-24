@@ -1,6 +1,6 @@
 {
   "name": "@keynote/core",
-  "version": "2.0.0-alpha.0",
+  "version": "2.0.0-alpha.1",
   "description": "@keynote/core",
   "main": "src/index.js",
   "repository": {
@@ -18,9 +18,9 @@
   },
   "homepage": "https://github.com/keynote/keynote/tree/dev/packages/core#readme",
   "dependencies": {
-    "@keynote/plugin-keyboard": "^2.0.0-alpha.0",
+    "@keynote/plugin-keyboard": "^2.0.0-alpha.1",
     "@keynote/plugin-progress": "^2.0.0-alpha.0",
-    "@keynote/plugin-touch": "^2.0.0-alpha.0",
+    "@keynote/plugin-touch": "^2.0.0-alpha.1",
     "@keynote/state": "^2.0.0-alpha.0",
     "@znck/prop-types": "^0.3.4",
     "resize-observer-polyfill": "^1.5.0",

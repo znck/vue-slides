@@ -1,6 +1,6 @@
 {
   "name": "@keynote/cli",
-  "version": "2.0.0-alpha.0",
+  "version": "2.0.0-alpha.1",
   "description": "@keynote/cli",
   "bin": {
     "keynote": "bin/keynote.js"
@@ -21,9 +21,9 @@
   "homepage": "https://github.com/keynote/keynote/tree/dev/packages/cli#readme",
   "dependencies": {
     "@babel/core": "^7.1.5",
-    "@keynote/core": "^2.0.0-alpha.0",
+    "@keynote/core": "^2.0.0-alpha.1",
     "@keynote/postcss-kem-unit": "^2.0.0-alpha.0",
-    "@keynote/theme-vue": "^2.0.0-alpha.0",
+    "@keynote/theme-vue": "^2.0.0-alpha.1",
     "autoprefixer": "^8.5.1",
     "babel-loader": "^8.0.4",
     "cache-loader": "^1.2.2",

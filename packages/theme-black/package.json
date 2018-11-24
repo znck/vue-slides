@@ -1,6 +1,6 @@
 {
   "name": "@keynote/theme-black",
-  "version": "2.0.0-alpha.0",
+  "version": "2.0.0-alpha.1",
   "description": "@keynote/theme-black",
   "main": "src/index.js",
   "repository": {
