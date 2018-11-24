@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/keynote/keynote/tree/dev/packages/plugin-keyboard#readme",
   "dependencies": {
-    "@keynote/state": "link:../state",
+    "@keynote/state": "^2.0.0-alpha.0",
     "screenfull": "^3.3.3"
   },
   "publishConfig": {

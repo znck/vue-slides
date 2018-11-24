@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/keynote/keynote/tree/dev/packages/plugin-touch#readme",
   "dependencies": {
-    "@keynote/state": "link:../state",
+    "@keynote/state": "^2.0.0-alpha.0",
     "hammerjs": "^2.0.8",
     "screenfull": "^3.3.3"
   },
