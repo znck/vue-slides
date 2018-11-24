@@ -19,5 +19,8 @@
   "homepage": "https://github.com/keynote/keynote/tree/dev/packages/theme-white#readme",
   "dependencies": {
     "@keynote/theme-base": "link:../theme-base"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

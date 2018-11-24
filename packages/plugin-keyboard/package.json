@@ -20,5 +20,8 @@
   "dependencies": {
     "@keynote/state": "link:../state",
     "screenfull": "^3.3.3"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

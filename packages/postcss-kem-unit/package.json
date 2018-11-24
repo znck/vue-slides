@@ -19,5 +19,8 @@
   "homepage": "https://github.com/keynote/keynote/tree/dev/packages/postcss-kem-unit#readme",
   "dependencies": {
     "postcss": "^7.0.5"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

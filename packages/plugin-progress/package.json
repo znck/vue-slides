@@ -19,5 +19,8 @@
   "homepage": "https://github.com/keynote/keynote/tree/dev/packages/plugin-progress#readme",
   "dependencies": {
     "@keynote/state": "^1.1.3"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

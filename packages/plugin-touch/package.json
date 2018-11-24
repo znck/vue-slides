@@ -21,5 +21,8 @@
     "@keynote/state": "link:../state",
     "hammerjs": "^2.0.8",
     "screenfull": "^3.3.3"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
