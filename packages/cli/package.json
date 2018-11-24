@@ -23,7 +23,7 @@
     "@babel/core": "^7.1.5",
     "@keynote/core": "^2.0.0-alpha.0",
     "@keynote/postcss-kem-unit": "^2.0.0-alpha.0",
-    "@keynote/theme-vue": "link:../theme-vue",
+    "@keynote/theme-vue": "^2.0.0-alpha.0",
     "autoprefixer": "^8.5.1",
     "babel-loader": "^8.0.4",
     "cache-loader": "^1.2.2",
