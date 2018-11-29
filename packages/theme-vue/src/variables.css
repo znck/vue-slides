@@ -1,5 +1,7 @@
 #keynote {
-  --color: #000;
-  --text-color: rgba(255, 255, 255, 0.87);
-  --font-family-sans-serif: 'Helvetica Neue';
+  --color: #fff;
+  --text-color: #4DBA87;
+  --font-family-sans-serif: 'Source Sans Pro';
+  --slide--title--Color: #4DBA87;
+  --slide--subtitle--Color: #435466;
 }
