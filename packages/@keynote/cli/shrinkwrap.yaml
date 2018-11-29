@@ -1,5 +1,5 @@
 dependencies:
-  '@keynote/core': 1.0.2
+  '@keynote/core': 1.1.3
   '@keynote/theme-default': 1.0.2
   autoprefixer: 8.5.2
   cache-loader: 1.2.2
@@ -23,19 +23,19 @@ dependencies:
   webpack-hot-client: 3.0.0
   webpack-serve: 1.0.2
 packages:
-  /@keynote/core/1.0.2:
+  /@keynote/core/1.1.3:
     dependencies:
       '@znck/prop-types': 0.3.4
       de-indent: 1.0.2
       hammerjs: 2.0.8
-      prismjs: 1.14.0
+      prismjs: 1.15.0
       resize-observer-polyfill: 1.5.0
-      velocity-animate: 1.5.1
+      velocity-animate: 1.5.2
     dev: false
     peerDependencies:
       vue: ^2.5.16
     resolution:
-      integrity: sha512-7noB84M6olcHMHkefQuPZvuNQciLW3uxI+zUSJhjwK1/1SmiNldujUGRhWVL2xIj04pbg9ieGJMHNEERrSBakA==
+      integrity: sha512-YeKG5TR1xPVHjxD92KKVf6/1rKUkQDp8UJDIKk9tifyCHSaME0nAR5Gk3BmTr+TOGQP6r0JKOE0xEz3CWrXMqw==
   /@keynote/theme-default/1.0.2:
     dev: false
     resolution:
@@ -235,7 +235,7 @@ packages:
       integrity: sha512-LonryJP+FxQQHsjGBi6W786TQB1Oym+agTpY0c+Kj8alnIw+DLUJb6SI8Y1GHGhLCH1yPRrucjObUmxNICQ1pg==
   /@znck/prop-types/0.3.4:
     dependencies:
-      lodash-es: 4.17.10
+      lodash-es: 4.17.11
       nyc: 11.9.0
     dev: false
     resolution:
@@ -824,7 +824,7 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-T6kXw+WclKAEzWH47lCdplFocUM=
-  /clipboard/2.0.1:
+  /clipboard/2.0.4:
     dependencies:
       good-listener: 1.2.2
       select: 1.1.2
@@ -832,7 +832,7 @@ packages:
     dev: false
     optional: true
     resolution:
-      integrity: sha512-7yhQBmtN+uYZmfRjjVjKa0dZdWuabzpSKGtyQZN+9C8xlC788SSJjOHWh7tzurfwTqTD5UDYAhIv5fRJg3sHjQ==
+      integrity: sha512-Vw26VSLRpJfBofiVaFb/I8PVfdI1OxKcYShe6fm0sP/DtmiWQNCjhM/okTvdCo0G+lMMm1rMYbk4IK4x1X+kgQ==
   /clipboardy/1.2.3:
     dependencies:
       arch: 2.1.0
@@ -2631,10 +2631,10 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha1-K1aLJl7slExtnA3pw9u7ygNUzY4=
-  /lodash-es/4.17.10:
+  /lodash-es/4.17.11:
     dev: false
     resolution:
-      integrity: sha512-iesFYPmxYYGTcmQK0sL8bX3TGHyM6b2qREaB4kamHfQyfPJP0xgoGxp19nsH16nsfquLdiyKyX3mQkfiSGV8Rg==
+      integrity: sha512-DHb1ub+rMjjrxqlB3H56/6MXtm1lSksDp2rA2cNWjG8mlDUYFhUj3Di2Zn5IwSU87xLv8tNIQ7sSwE/YOX/D/Q==
   /lodash.camelcase/4.3.0:
     dev: false
     resolution:
@@ -3719,12 +3719,12 @@ packages:
     dev: false
     resolution:
       integrity: sha1-X0+HyPkeWuPzuoerTPXgOxoX8aM=
-  /prismjs/1.14.0:
+  /prismjs/1.15.0:
     dev: false
     optionalDependencies:
-      clipboard: 2.0.1
+      clipboard: 2.0.4
     resolution:
-      integrity: sha512-sa2s4m60bXs+kU3jcuUwx3ZCrUH7o0kuqnOOINbODqlRrDB7KY8SRx+xR/D7nHLlgfDdG7zXbRO8wJ+su5Ls0A==
+      integrity: sha512-Lf2JrFYx8FanHrjoV5oL8YHCclLQgbJcVZR+gikGGMqz6ub5QVWDTM6YIwm3BuPxM/LOV+rKns3LssXNLIf+DA==
   /process-nextick-args/2.0.0:
     dev: false
     resolution:
@@ -4805,10 +4805,10 @@ packages:
       node: '>= 0.8'
     resolution:
       integrity: sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=
-  /velocity-animate/1.5.1:
+  /velocity-animate/1.5.2:
     dev: false
     resolution:
-      integrity: sha512-VJ3csMz5zP1ifkbBlsNYpxnoWkPHfVRQ8tUongS78W5DxSGHB68pjYHDTgUYBkVM7P/HpYdVukgVUFcxjr1gGg==
+      integrity: sha512-m6EXlCAMetKztO1ppBhGU1/1MR3IiEevO6ESq6rcrSQ3Q77xYSW13jkfXW88o4xMrkXJhy/U7j4wFR/twMB0Eg==
   /vendors/1.0.2:
     dev: false
     resolution:
@@ -5064,7 +5064,7 @@ registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
-  '@keynote/core': ^1.0.0
+  '@keynote/core': ^1.1.3
   '@keynote/theme-default': ^1.0.0
   autoprefixer: ^8.5.1
   cache-loader: ^1.2.2
