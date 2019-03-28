@@ -34,7 +34,7 @@ export default {
 </template>
 
 <style>
-.keynote-slide {
+.vue-slides-slide {
   /* Tier 3 */
   --quote-slide--body--Padding: var(--slide--body--Padding);
   

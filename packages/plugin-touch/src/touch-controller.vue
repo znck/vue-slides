@@ -1,6 +1,6 @@
 <script>
 import screenfull from 'screenfull'
-import { presentationMethods } from '@keynote/state'
+import { presentationMethods } from '@vue-slides/state'
 
 export default {
   mounted() {
@@ -19,7 +19,7 @@ export default {
     ...presentationMethods,
     async hammer() {
       const { default: Hammer } = await import('hammerjs')
-      const el = document.getElementById('keynote')
+      const el = document.getElementById('vue-slides')
       const hammer = new Hammer(el)
 
       hammer.on('tap', event => {

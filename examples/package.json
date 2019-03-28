@@ -4,15 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "keynote": "keynote"
+    "vue-slides": "vue-slides"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@keynote/cli": "link:../packages/cli",
-    "@keynote/theme-black": "link:../packages/theme-black",
-    "@keynote/theme-vue": "link:../packages/theme-black",
-    "@keynote/theme-white": "link:../packages/theme-white"
+    "@vue-slides/cli": "link:../packages/cli",
+    "@vue-slides/theme-black": "link:../packages/theme-black",
+    "@vue-slides/theme-vue": "link:../packages/theme-black",
+    "@vue-slides/theme-white": "link:../packages/theme-white"
   }
 }

@@ -1,4 +1,4 @@
-#keynote {
+#vue-slides {
   /* Tier 0 */
   --color: #fff;
   --text-color: rgba(0, 0, 0, .87);
@@ -15,19 +15,19 @@
   --text-font-primary: var(--font-family-sans-serif);
 }
 
-#keynote-presentation {
+#vue-slides-presentation {
   /* Tier 1 (scope: presentation) */
 }
 
-#keynote-presenter {
+#vue-slides-presenter {
   /* Tier 1 (scope: presenter) */
 }
 
-#keynote-overview {
+#vue-slides-overview {
   /* Tier 1 (scope: overview) */
 }
 
-.keynote-slide {
+.vue-slides-slide {
   font-family: var(--text-font-primary);
   
   /* Tier 2 */

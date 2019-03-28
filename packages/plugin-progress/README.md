@@ -1,1 +1,1 @@
-# @keynote/plugin-progress
+# @vue-slides/plugin-progress

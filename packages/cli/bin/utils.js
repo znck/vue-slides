@@ -12,13 +12,13 @@ function createWebpackConfig({ file, theme, debug, outDir }) {
   const config = createConfig({ debug, outDir, theme })
 
   if (/\.(vue|slides)$/.test(file)) {
-    config.entry('keynote').add(
+    config.entry('vue-slides').add(
       path.relative(process.cwd(), path.resolve(__dirname, './template/main.js'))
     )
 
-    config.resolve.alias.set('@keynote-presentation', file)
+    config.resolve.alias.set('@vue-slides-presentation', file)
   } else {
-    config.entry('keynote').add(path.relative(process.cwd(), file))
+    config.entry('vue-slides').add(path.relative(process.cwd(), file))
   }
 
   return config

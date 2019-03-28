@@ -1,5 +1,5 @@
 <script>
-import { slidesMethods, pluginsMethods, pluginsComputed } from '@keynote/state'
+import { slidesMethods, pluginsMethods, pluginsComputed } from '@vue-slides/state'
 import { PluginController } from './components'
 
 export default {
@@ -30,7 +30,7 @@ export default {
   render(h) {
     this.prepareSlides(this.$slots.default)
 
-    return h('div', { staticClass: 'keynote', attrs: { id: 'keynote' } }, [
+    return h('div', { staticClass: 'vue-slides', attrs: { id: 'vue-slides' } }, [
       h('router-view', { key: this.$route.fullPath }),
       h(PluginController, {
         props: { target: 'global', plugins: this.activePlugins }
@@ -48,7 +48,7 @@ body {
   height: 100%;
 }
 
-.keynote {
+.vue-slides {
   background: black;
   width: 100%;
   height: 100%;

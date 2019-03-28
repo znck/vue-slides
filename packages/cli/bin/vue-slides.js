@@ -10,7 +10,7 @@ program
   .description('start development server')
   .option(
     '-t, --theme <theme>',
-    'use specified theme (default: @keynote/theme-vue)'
+    'use specified theme (default: @vue-slides/theme-vue)'
   )
   .option('-p, --port <port>', 'use specified port (default: 8080)')
   .option('-h, --host <host>', 'use specified host (default: 0.0.0.0)')
@@ -23,11 +23,11 @@ program
   .description('build as static site')
   .option(
     '-d, --dest <outDir>',
-    'specify build output dir (default: .keynote/dist)'
+    'specify build output dir (default: .vue-slides/dist)'
   )
   .option(
     '-t, --theme <theme>',
-    'use specified theme (default: @keynote/theme-default)'
+    'use specified theme (default: @vue-slides/theme-default)'
   )
   .option('--debug', 'build in development mode for debugging')
   .action((file = 'presentation.vue', { debug, dest, theme }) => {
@@ -47,7 +47,7 @@ program.on('--help', () => {
   console.log()
   console.log(
     `  Run ${chalk.cyan(
-      `keynote <command> --help`
+      `vue-slides <command> --help`
     )} for detailed usage of given command.`
   )
   console.log()

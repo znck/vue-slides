@@ -3,7 +3,7 @@ import {
   presentationComputed,
   presentationMethods,
   pluginsComputed
-} from '@keynote/state'
+} from '@vue-slides/state'
 
 import {
   AnimationEngine,
@@ -29,7 +29,7 @@ export default {
 
 <template>
   <div :class="$style.wrapper">
-    <SlideRenderer :x="16" :y="9" id="keynote-presentation">
+    <SlideRenderer :x="16" :y="9" id="vue-slides-presentation">
       <component v-if="activeSlide" :is="activeSlide.meta.component" />
 
       <PluginController target="presentation" :plugins="activePlugins" />

@@ -32,7 +32,7 @@ export default {
 </template>
 
 <style>
-.keynote-slide {
+.vue-slides-slide {
   /* Tier 3 */
   --title-bullets-photo-slide--body--Padding: var(--slide--body--Padding);
   

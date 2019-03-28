@@ -1,1 +1,1 @@
-# @keynote/state
+# @vue-slides/state

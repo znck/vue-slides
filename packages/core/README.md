@@ -1,1 +1,1 @@
-# @keynote/core
+# @vue-slides/core

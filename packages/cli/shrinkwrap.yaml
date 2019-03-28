@@ -1,8 +1,8 @@
 dependencies:
   '@babel/core': 7.3.4
-  '@keynote/core': 'link:../core'
-  '@keynote/postcss-kem-unit': 'link:../postcss-kem-unit'
-  '@keynote/theme-vue': 'link:../theme-vue'
+  '@vue-slides/core': 'link:../core'
+  '@vue-slides/postcss-kem-unit': 'link:../postcss-kem-unit'
+  '@vue-slides/theme-vue': 'link:../theme-vue'
   '@vuepress/markdown': 1.0.0-alpha.42
   autoprefixer: 8.6.5
   babel-loader: 8.0.5
@@ -6473,9 +6473,9 @@ packages:
 shrinkwrapVersion: 5
 specifiers:
   '@babel/core': ^7.1.5
-  '@keynote/core': ^2.0.0-alpha.1
-  '@keynote/postcss-kem-unit': ^2.0.0-alpha.0
-  '@keynote/theme-vue': ^2.0.0-alpha.1
+  '@vue-slides/core': ^2.0.0-alpha.1
+  '@vue-slides/postcss-kem-unit': ^2.0.0-alpha.0
+  '@vue-slides/theme-vue': ^2.0.0-alpha.1
   '@vuepress/markdown': ^1.0.0-alpha.42
   autoprefixer: ^8.5.1
   babel-loader: ^8.0.4

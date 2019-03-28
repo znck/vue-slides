@@ -1,1 +1,1 @@
-# @keynote/cli
+# @vue-slides/cli

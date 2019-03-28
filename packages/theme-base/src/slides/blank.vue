@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <div class="keynote-slide" :class="$style.wrapper">
+  <div class="vue-slides-slide" :class="$style.wrapper">
     <div :class="$style.slide" v-bind="$attrs" v-on="$listeners">
       <slot />
     </div>
@@ -13,7 +13,7 @@ export default {
 </template>
 
 <style>
-.keynote-slide {
+.vue-slides-slide {
   --blank-slide--Background: var(--slide--Background);
 }
 </style>

@@ -1,11 +1,11 @@
 dependencies:
-  '@keynote/cli': 'link:../packages/cli'
-  '@keynote/theme-black': 'link:../packages/theme-black'
-  '@keynote/theme-vue': 'link:../packages/theme-black'
-  '@keynote/theme-white': 'link:../packages/theme-white'
+  '@vue-slides/cli': 'link:../packages/cli'
+  '@vue-slides/theme-black': 'link:../packages/theme-black'
+  '@vue-slides/theme-vue': 'link:../packages/theme-black'
+  '@vue-slides/theme-white': 'link:../packages/theme-white'
 shrinkwrapVersion: 5
 specifiers:
-  '@keynote/cli': 'link:../packages/cli'
-  '@keynote/theme-black': 'link:../packages/theme-black'
-  '@keynote/theme-vue': 'link:../packages/theme-black'
-  '@keynote/theme-white': 'link:../packages/theme-white'
+  '@vue-slides/cli': 'link:../packages/cli'
+  '@vue-slides/theme-black': 'link:../packages/theme-black'
+  '@vue-slides/theme-vue': 'link:../packages/theme-black'
+  '@vue-slides/theme-white': 'link:../packages/theme-white'

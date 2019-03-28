@@ -1,10 +1,10 @@
 <script>
-import { pluginsComputed } from '@keynote/state'
+import { pluginsComputed } from '@vue-slides/state'
 
 const plugins = {
-  progress: () => import('@keynote/plugin-progress'),
-  keyboard: () => import('@keynote/plugin-keyboard'),
-  touch: () => import('@keynote/plugin-touch')
+  progress: () => import('@vue-slides/plugin-progress'),
+  keyboard: () => import('@vue-slides/plugin-keyboard'),
+  touch: () => import('@vue-slides/plugin-touch')
 }
 
 async function importPlugin(name) {
@@ -15,7 +15,7 @@ async function importPlugin(name) {
   return normalize(
     name in plugins
       ? await plugins[name]()
-      : await import(/* webpackPrefetch: true */ /* webpackMode: "lazy" */ `keynote-plugin-${name}`)
+      : await import(/* webpackPrefetch: true */ /* webpackMode: "lazy" */ `vue-slides-plugin-${name}`)
   )
 }
 

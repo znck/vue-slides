@@ -30,8 +30,8 @@ module.exports = function createBaseConfig({ outDir, debug, theme }) {
   const inlineLimit = 1000000
   const modulePaths = getModulePaths()
 
-  if (!theme.startsWith('@keynote/theme') && !theme.startsWith('keynote-theme-')) {
-    theme = resolveFirst([theme, `@keynote/theme-${theme}`, `keynote-theme-${theme}`], modulePaths)
+  if (!theme.startsWith('@vue-slides/theme') && !theme.startsWith('vue-slides-theme-')) {
+    theme = resolveFirst([theme, `@vue-slides/theme-${theme}`, `vue-slides-theme-${theme}`], modulePaths)
   }
 
   config.mode(isProd ? 'production' : 'development')
@@ -57,10 +57,10 @@ module.exports = function createBaseConfig({ outDir, debug, theme }) {
 
   const cacheDirectory = path.resolve(
     process.cwd(),
-    'node_modules/.cache/keynote'
+    'node_modules/.cache/vue-slides'
   )
   const cacheIdentifier = JSON.stringify({
-    keynote: require('../../package.json').version,
+    vue-slides: require('../../package.json').version,
     'cache-loader': require('cache-loader').version,
     'vue-loader': require('vue-loader').version,
     env: process.env.NODE_ENV
@@ -171,7 +171,7 @@ module.exports = function createBaseConfig({ outDir, debug, theme }) {
           .options({
             plugins: [
               require('autoprefixer'),
-              require('@keynote/postcss-kem-unit')
+              require('@vue-slides/postcss-kem-unit')
             ],
             sourceMap: !isProd
           })
@@ -193,7 +193,7 @@ module.exports = function createBaseConfig({ outDir, debug, theme }) {
           .options({
             plugins: [
               require('autoprefixer'),
-              require('@keynote/postcss-kem-unit')
+              require('@vue-slides/postcss-kem-unit')
             ],
             sourceMap: !isProd
           })
@@ -272,8 +272,8 @@ module.exports = function createBaseConfig({ outDir, debug, theme }) {
     }
   ])
 
-  if (checkExists('keynote.config.js')) {
-    const userConfig = require(path.resolve(process.cwd(), 'keynote.config.js'))
+  if (checkExists('vue-slides.config.js')) {
+    const userConfig = require(path.resolve(process.cwd(), 'vue-slides.config.js'))
 
     if (userConfig.webpackChain) {
       return userConfig.webpackChain(config) || config

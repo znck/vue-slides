@@ -1,8 +1,8 @@
 dependencies:
-  '@keynote/plugin-keyboard': 'link:../plugin-keyboard'
-  '@keynote/plugin-progress': 'link:../plugin-progress'
-  '@keynote/plugin-touch': 'link:../plugin-touch'
-  '@keynote/state': 'link:../state'
+  '@vue-slides/plugin-keyboard': 'link:../plugin-keyboard'
+  '@vue-slides/plugin-progress': 'link:../plugin-progress'
+  '@vue-slides/plugin-touch': 'link:../plugin-touch'
+  '@vue-slides/state': 'link:../state'
   '@znck/prop-types': 0.3.4
   resize-observer-polyfill: 1.5.1
   vue: 2.6.8
@@ -71,10 +71,10 @@ packages:
       integrity: sha512-mdHeHT/7u4BncpUZMlxNaIdcN/HIt1GsGG5LKByArvYG/v6DvHcOxvDCts+7SRdCoIRGllK8IMZvQtQXLppDYg==
 shrinkwrapVersion: 5
 specifiers:
-  '@keynote/plugin-keyboard': ^2.0.0-alpha.1
-  '@keynote/plugin-progress': ^2.0.0-alpha.0
-  '@keynote/plugin-touch': ^2.0.0-alpha.1
-  '@keynote/state': ^2.0.0-alpha.0
+  '@vue-slides/plugin-keyboard': ^2.0.0-alpha.1
+  '@vue-slides/plugin-progress': ^2.0.0-alpha.0
+  '@vue-slides/plugin-touch': ^2.0.0-alpha.1
+  '@vue-slides/state': ^2.0.0-alpha.0
   '@znck/prop-types': ^0.3.4
   resize-observer-polyfill: ^1.5.0
   vue: ^2.5.17

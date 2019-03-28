@@ -1,5 +1,5 @@
 dependencies:
-  '@keynote/state': 'link:../state'
+  '@vue-slides/state': 'link:../state'
   hammerjs: 2.0.8
   screenfull: 3.3.3
 packages:
@@ -17,6 +17,6 @@ packages:
       integrity: sha512-DzYUuXr+OV2BDvYXaYzlYgJd4WXZZ2CW5NFC7Kw6TUCpzXJAx4MwlVD6CH+Mu6fi8rfAQIQfqdFZ4jtDsEkWig==
 shrinkwrapVersion: 5
 specifiers:
-  '@keynote/state': ^2.0.0-alpha.0
+  '@vue-slides/state': ^2.0.0-alpha.0
   hammerjs: ^2.0.8
   screenfull: ^3.3.3

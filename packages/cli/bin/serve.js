@@ -2,7 +2,7 @@ const path = require('path')
 const chalk = require('chalk')
 const { createWebpackConfig } = require('./utils')
 
-module.exports = async ({ file, host, port, theme = '@keynote/theme-vue' }) => {
+module.exports = async ({ file, host, port, theme = '@vue-slides/theme-vue' }) => {
   const portFinder = require('portfinder')
   const webpack = require('webpack')
   const serve = require('webpack-serve')
@@ -28,11 +28,11 @@ module.exports = async ({ file, host, port, theme = '@keynote/theme-vue' }) => {
   const compiler = webpack(webpackConfig)
 
   let count = 0
-  compiler.hooks.done.tap('keynote', error => {
+  compiler.hooks.done.tap('vue-slides', error => {
     const time = new Date().toTimeString().match(/^[\d:]+/)[0]
     if (count === 0) {
         console.log(
-        `\n  Keynote dev server listening at ${chalk.cyan(
+        `\n  VueSlides dev server listening at ${chalk.cyan(
           `http://${displayHost}:${port}`
         )}\n`
       )
@@ -41,7 +41,7 @@ module.exports = async ({ file, host, port, theme = '@keynote/theme-vue' }) => {
       `  ${chalk.gray(`[${time}]`)} ${chalk.green('✔')} successfully compiled (${++count})`
     )
   })
-  compiler.hooks.failed.tap('keynote', error => {
+  compiler.hooks.failed.tap('vue-slides', error => {
     const time = new Date().toTimeString().match(/^[\d:]+/)[0]
     console.log(
       `  ${chalk.gray(`[${time}]`)} ${chalk.red('❌')} compilation failed.`

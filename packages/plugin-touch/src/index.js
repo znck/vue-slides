@@ -1,5 +1,5 @@
 export default {
-  id: '@keynote/plugin-touch',
+  id: '@vue-slides/plugin-touch',
   name: 'Touch',
   entry: {
     presentation: () => import('./touch-controller.vue')

@@ -12,6 +12,7 @@ style: 'color: red'
 
 <!-- slide: Some random stuff -->
 ---
+layout: default
 style:
   color: red
   font-size: 4kem

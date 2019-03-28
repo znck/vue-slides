@@ -1,5 +1,5 @@
 dependencies:
-  '@keynote/theme-base': 'link:../theme-base'
+  '@vue-slides/theme-base': 'link:../theme-base'
 shrinkwrapVersion: 5
 specifiers:
-  '@keynote/theme-base': ^2.0.0-alpha.0
+  '@vue-slides/theme-base': ^2.0.0-alpha.0

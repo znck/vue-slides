@@ -1,6 +1,6 @@
-# Vue Keynote
+# VueSlides
 
-- [ ] Markdown to Keynote (for simple presentations)
+- [ ] Markdown to VueSlides (for simple presentations)
 - [ ] Preview in VS Code
 - [ ] Animations
 - [ ] Editor

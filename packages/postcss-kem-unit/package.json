@@ -1,22 +1,22 @@
 {
-  "name": "@keynote/postcss-kem-unit",
+  "name": "@vue-slides/postcss-kem-unit",
   "version": "2.0.0-alpha.0",
-  "description": "@keynote/postcss-kem-unit",
+  "description": "@vue-slides/postcss-kem-unit",
   "main": "src/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/keynote/keynote.git"
+    "url": "git+https://github.com/vue-slides/vue-slides.git"
   },
   "keywords": [
-    "keynote",
+    "vue-slides",
     "vue"
   ],
   "author": "Rahul Kadyan",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/keynote/keynote/issues"
+    "url": "https://github.com/vue-slides/vue-slides/issues"
   },
-  "homepage": "https://github.com/keynote/keynote/tree/dev/packages/postcss-kem-unit#readme",
+  "homepage": "https://github.com/vue-slides/vue-slides/tree/dev/packages/postcss-kem-unit#readme",
   "dependencies": {
     "postcss": "^7.0.5"
   },

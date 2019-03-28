@@ -1,5 +1,5 @@
 export default {
-  id: '@keynote/plugin-keyboard',
+  id: '@vue-slides/plugin-keyboard',
   name: 'Keyboard',
   entry: {
     global: () => import('./keyboard-controller.vue'),

@@ -1,9 +1,9 @@
 {
   "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-  "name": "Keynote",
+  "name": "Vue Slides",
   "patterns": [
     {
-      "name": "meta.keynote",
+      "name": "meta.vue-slides",
       "include": "#frontMatter"
     },
     {
@@ -14,19 +14,19 @@
     "slide": {
       "patterns": [
         {
-          "name": "slide.keynote",
+          "name": "slide.vue-slides",
           "begin": "<!-- (slide)(?::(.*?))? -->",
           "end": "(?=<!-- slide(?::.*?)? -->|\\z)",
           "patterns": [{ "include": "#markdown" }],
           "beginCaptures": {
             "0": {
-              "name": "comment.block.separator.slide.keynote"
+              "name": "comment.block.separator.slide.vue-slides"
             },
             "1": {
-              "name": "keyword.separator.slide.keynote"
+              "name": "keyword.separator.slide.vue-slides"
             },
             "2": {
-              "name": "title.separator.slide.keynote"
+              "name": "title.separator.slide.vue-slides"
             }
           }
         }
@@ -54,5 +54,5 @@
       ]
     }
   },
-  "scopeName": "source.keynote"
+  "scopeName": "source.vue-slides"
 }

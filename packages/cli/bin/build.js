@@ -4,7 +4,7 @@ module.exports = async ({
   file,
   outDir,
   debug,
-  theme = '@keynote/theme-vue'
+  theme = '@vue-slides/theme-vue'
 }) => {
   process.env.NODE_ENV = 'production'
   const webpack = require('webpack')

@@ -4,12 +4,12 @@ import router from './router'
 import store from './store'
 import api from './api'
 
-import Keynote from './keynote.vue'
+import VueSlides from './vue-slides.vue'
 
 Vue.use(api)
 
 /**
- * Create a keynote presentation application.
+ * Create a vue-slides presentation application.
  *
  * @param {import('vue/types').ComponentOptions} Presentation
  * @returns {Vue}
@@ -18,7 +18,7 @@ export default function createKeynote(Presentation, { theme = {}, slides } = {})
   const components = {
     ...theme.slides,
     ...slides,
-    Keynote
+    VueSlides
   }
   
   for (const name in components) {

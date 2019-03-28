@@ -1,6 +1,6 @@
 <script>
 import { on, addScope } from './keyboard'
-import { presentationMethods } from '@keynote/state'
+import { presentationMethods } from '@vue-slides/state'
 export default {
   methods: {
     ...presentationMethods,

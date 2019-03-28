@@ -1,14 +1,14 @@
-#keynote {
+#vue-slides {
   --color: white;
   --text-color: rgb(44,62,80, 0.87);
   --font-family-sans-serif: 'Helvetica Neue';
 }
 
-#keynote-presentation {
+#vue-slides-presentation {
   --global-progress-widget-background: #dedede;
   --global-progress-widget-foreground: rgb(66,185,131);
 }
 
-.keynote-slide {
+.vue-slides-slide {
   --slide--title--Color: rgb(66,185,131, 0.87);
 }

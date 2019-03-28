@@ -1,7 +1,7 @@
 /* eslint-disable */
 import Vue from 'vue'
-import createKeynote from '@keynote/core'
-import Presentation from '@keynote-presentation'
+import createKeynote from '@vue-slides/core'
+import Presentation from '@vue-slides-presentation'
 import upperFirst from 'lodash/upperFirst'
 import camelCase from 'lodash/camelCase'
 
@@ -58,11 +58,11 @@ if (__KEYNOTE_LOAD_SLIDES__) {
   })
 }
 
-const keynote = createKeynote(Presentation, {
+const vue-slides = createKeynote(Presentation, {
   theme: require(__THEME__).default,
   slides
 })
 
 if (__ENV__ !== 'production') {
-  window.keynote = keynote
+  window.vue-slides = vue-slides
 }

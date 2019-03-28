@@ -17,7 +17,7 @@ export default {
 </template>
 
 <style>
-.keynote-slide {
+.vue-slides-slide {
   /* Tier 3 */
   --photo-2up-slide--body--Padding: var(--slide--body--Padding);
   

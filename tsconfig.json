@@ -12,7 +12,7 @@
     "checkJs": false,
     "sourceMap": true,
     "paths": {
-      "@keynote/*": ["packages/*"] 
+      "@vue-slides/*": ["packages/*"] 
     }
   }
 }

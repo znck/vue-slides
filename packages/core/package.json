@@ -1,27 +1,27 @@
 {
-  "name": "@keynote/core",
+  "name": "@vue-slides/core",
   "version": "2.0.0-alpha.1",
-  "description": "@keynote/core",
+  "description": "@vue-slides/core",
   "main": "src/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/keynote/keynote.git"
+    "url": "git+https://github.com/vue-slides/vue-slides.git"
   },
   "keywords": [
-    "keynote",
+    "vue-slides",
     "vue"
   ],
   "author": "Rahul Kadyan",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/keynote/keynote/issues"
+    "url": "https://github.com/vue-slides/vue-slides/issues"
   },
-  "homepage": "https://github.com/keynote/keynote/tree/dev/packages/core#readme",
+  "homepage": "https://github.com/vue-slides/vue-slides/tree/dev/packages/core#readme",
   "dependencies": {
-    "@keynote/plugin-keyboard": "^2.0.0-alpha.1",
-    "@keynote/plugin-progress": "^2.0.0-alpha.0",
-    "@keynote/plugin-touch": "^2.0.0-alpha.1",
-    "@keynote/state": "^2.0.0-alpha.0",
+    "@vue-slides/plugin-keyboard": "^2.0.0-alpha.1",
+    "@vue-slides/plugin-progress": "^2.0.0-alpha.0",
+    "@vue-slides/plugin-touch": "^2.0.0-alpha.1",
+    "@vue-slides/state": "^2.0.0-alpha.0",
     "@znck/prop-types": "^0.3.4",
     "resize-observer-polyfill": "^1.5.0",
     "vue": "^2.5.17",

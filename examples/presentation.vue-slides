@@ -136,3 +136,8 @@ s: foo
 ---
 layout: default
 ---
+
+<!-- slide: title -->
+---
+layout: default
+---

@@ -1,22 +1,22 @@
 {
-  "name": "@keynote/state",
+  "name": "@vue-slides/state",
   "version": "2.0.0-alpha.0",
-  "description": "@keynote/state",
+  "description": "@vue-slides/state",
   "main": "src/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/keynote/keynote.git"
+    "url": "git+https://github.com/vue-slides/vue-slides.git"
   },
   "keywords": [
-    "keynote",
+    "vue-slides",
     "vue"
   ],
   "author": "Rahul Kadyan",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/keynote/keynote/issues"
+    "url": "https://github.com/vue-slides/vue-slides/issues"
   },
-  "homepage": "https://github.com/keynote/keynote/tree/dev/packages/state#readme",
+  "homepage": "https://github.com/vue-slides/vue-slides/tree/dev/packages/state#readme",
   "dependencies": {
     "vue": "^2.5.17",
     "vuex": "^3.0.1"

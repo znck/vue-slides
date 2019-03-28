@@ -1,8 +1,8 @@
 {
-  "name": "keynote",
-  "displayName": "Keynote",
-  "description": "Keynote Language Support",
-  "version": "0.0.1",
+  "name": "vue-slides",
+  "displayName": "VueSlides",
+  "description": "VueSlides Language Support",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.32.0"
   },
@@ -10,37 +10,36 @@
     "Programming Languages"
   ],
   "activationEvents": [
-    "onLanguage:keynote"
+    "onLanguage:vue-slides"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "languages": [
       {
-        "id": "keynote",
+        "id": "vue-slides",
         "aliases": [
-          "Keynote",
-          "keynote"
+          "VueSlides",
+          "vue-slides",
+          "vueslides"
         ],
         "extensions": [
-          ".keynote",
-          ".slides",
-          ".keynote.md",
-          ".slides.md"
+          ".vue-slides",
+          ".slides"
         ],
         "configuration": "./language-configuration.json"
       }
     ],
     "grammars": [
       {
-        "language": "keynote",
-        "scopeName": "source.keynote",
-        "path": "./syntaxes/keynote.tmLanguage.json"
+        "language": "vue-slides",
+        "scopeName": "source.vue-slides",
+        "path": "./syntaxes/vue-slides.tmLanguage.json"
       }
     ]
   },
   "publisher": "znck",
   "icon": "icon.png",
-  "repository": "https://github.com/znck/keynote",
+  "repository": "https://github.com/znck/vue-slides",
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",

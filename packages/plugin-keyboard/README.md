@@ -1,1 +1,1 @@
-# @keynote/plugin-keyboard
+# @vue-slides/plugin-keyboard

@@ -1,1 +1,1 @@
-# @keynote/theme-vue
+# @vue-slides/theme-vue

@@ -14,7 +14,7 @@ files.forEach(shortName => {
     return
   }
 
-  const name = `@keynote/${shortName}`
+  const name = `@vue-slides/${shortName}`
   const pkgPath = path.join(packagesDir, shortName, `package.json`)
   if (args.force || !fs.existsSync(pkgPath)) {
     const json = {
@@ -24,15 +24,15 @@ files.forEach(shortName => {
       main: `src/index.js`,
       repository: {
         type: 'git',
-        url: 'git+https://github.com/keynote/keynote.git'
+        url: 'git+https://github.com/vue-slides/vue-slides.git'
       },
-      keywords: ['keynote', 'vue'],
+      keywords: ['vue-slides', 'vue'],
       author: 'Rahul Kadyan',
       license: 'MIT',
       bugs: {
-        url: 'https://github.com/keynote/keynote/issues'
+        url: 'https://github.com/vue-slides/vue-slides/issues'
       },
-      homepage: `https://github.com/keynote/keynote/tree/dev/packages/${shortName}#readme`
+      homepage: `https://github.com/vue-slides/vue-slides/tree/dev/packages/${shortName}#readme`
     }
     fs.writeFileSync(pkgPath, JSON.stringify(json, null, 2))
   }

@@ -11,7 +11,7 @@ module.exports = function MarkdownLoader(source) {
   const file = this.resourcePath
   const relPath = path.dirname(file)
   const { body: content, attributes } = parse(source)
-  const template = `<template>\n<Keynote>${
+  const template = `<template>\n<VueSlides>${
     content.split(/<!-- slide(?:.*?)? -->/).map(parse).map(
       ({ body, attributes }) => {
         const { layout = 'Slide', ...props } = attributes
@@ -19,7 +19,7 @@ module.exports = function MarkdownLoader(source) {
         return `<${layout} ${propsToString(props)}>${md.render(body, { loader, relPath, data: attributes })}</${layout}>`
       }
     ).join('\n')
-  }</Keynote>\n</template><script>export default { name: '${attributes.name || 'Presentation'}', data: () => (${JSON.stringify(attributes)}) }</script>`
+  }</VueSlides>\n</template><script>export default { name: '${attributes.name || 'Presentation'}', data: () => (${JSON.stringify(attributes)}) }</script>`
 
   return template
 }

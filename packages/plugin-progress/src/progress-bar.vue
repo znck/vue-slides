@@ -1,5 +1,5 @@
 <script>
-import { presentationComputed } from '@keynote/state'
+import { presentationComputed } from '@vue-slides/state'
 
 export default {
   props: {
@@ -55,7 +55,7 @@ export default {
 </template>
 
 <style>
-#keynote-presentation {
+#vue-slides-presentation {
   --progress-widget-offset: 2kem;
   --progress-widget-offset-x: var(--progress-widget-offset);
   --progress-widget-offset-y: var(--progress-widget-offset);

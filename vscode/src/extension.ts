@@ -4,7 +4,7 @@ import * as vscode from 'vscode'
 
 const selector = {
   scheme: 'file',
-  language: 'keynote'
+  language: 'vue-slides'
 }
 const separatorCompletionItem = (() => {
   const item = new vscode.CompletionItem(

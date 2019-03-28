@@ -1,1 +1,1 @@
-# @keynote/theme-black
+# @vue-slides/theme-black

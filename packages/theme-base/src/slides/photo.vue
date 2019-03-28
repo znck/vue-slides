@@ -13,7 +13,7 @@ export default {
 </template>
 
 <style>
-.keynote-slide {
+.vue-slides-slide {
   /* Tier 3 */
   --photo-slide--body--Padding: 0;
   

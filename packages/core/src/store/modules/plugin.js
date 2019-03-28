@@ -1,6 +1,6 @@
 import Vue from 'vue'
 
-import { ACTIVATE_PLUGIN, CONFIGURE_PLUGIN } from '@keynote/state'
+import { ACTIVATE_PLUGIN, CONFIGURE_PLUGIN } from '@vue-slides/state'
 
 export const namespaced = true
 

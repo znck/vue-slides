@@ -13,7 +13,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const vscode = require("vscode");
 const selector = {
     scheme: 'file',
-    language: 'keynote'
+    language: 'vue-slides'
 };
 const separatorCompletionItem = (() => {
     const item = new vscode.CompletionItem('Insert new slide', vscode.CompletionItemKind.Snippet);

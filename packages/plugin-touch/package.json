@@ -1,24 +1,24 @@
 {
-  "name": "@keynote/plugin-touch",
+  "name": "@vue-slides/plugin-touch",
   "version": "2.0.0-alpha.1",
-  "description": "@keynote/plugin-touch",
+  "description": "@vue-slides/plugin-touch",
   "main": "src/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/keynote/keynote.git"
+    "url": "git+https://github.com/vue-slides/vue-slides.git"
   },
   "keywords": [
-    "keynote",
+    "vue-slides",
     "vue"
   ],
   "author": "Rahul Kadyan",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/keynote/keynote/issues"
+    "url": "https://github.com/vue-slides/vue-slides/issues"
   },
-  "homepage": "https://github.com/keynote/keynote/tree/dev/packages/plugin-touch#readme",
+  "homepage": "https://github.com/vue-slides/vue-slides/tree/dev/packages/plugin-touch#readme",
   "dependencies": {
-    "@keynote/state": "^2.0.0-alpha.0",
+    "@vue-slides/state": "^2.0.0-alpha.0",
     "hammerjs": "^2.0.8",
     "screenfull": "^3.3.3"
   },

@@ -1,5 +1,5 @@
 <template>
-  <Keynote :plugin-progress="{ $presentation: { title: 'Test Presentation', author: { name: 'Rahul Kadyan'} } }">
+  <VueSlides :plugin-progress="{ $presentation: { title: 'Test Presentation', author: { name: 'Rahul Kadyan'} } }">
     <TitleSubtitleSlide title="Lorem Ipsum Dolor" subtitle="Lorem Ipsum Dolor" />
     <TitleSlide title="Lorem Ipsum Dolor" />
     <TitleBodySlide title="Lorem Ipsum Dolor">
@@ -18,5 +18,5 @@
     <Slide>
       <p>Lorem Ipsum Dolor</p>
     </Slide>
-  </Keynote>
+  </VueSlides>
 </template>

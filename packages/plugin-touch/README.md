@@ -1,1 +1,1 @@
-# @keynote/plugin-touch
+# @vue-slides/plugin-touch
