@@ -8,9 +8,7 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-DzYUuXr+OV2BDvYXaYzlYgJd4WXZZ2CW5NFC7Kw6TUCpzXJAx4MwlVD6CH+Mu6fi8rfAQIQfqdFZ4jtDsEkWig==
-registry: 'https://registry.npmjs.org/'
-shrinkwrapMinorVersion: 9
-shrinkwrapVersion: 3
+shrinkwrapVersion: 5
 specifiers:
-  '@keynote/state': 'link:../state'
+  '@keynote/state': ^2.0.0-alpha.0
   screenfull: ^3.3.3

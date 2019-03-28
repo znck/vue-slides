@@ -18,12 +18,14 @@ export function removeScope(name) {
 export function init(options = {}) {
   Object.assign(config, options)
 
-  document.addEventListener('keydown', handleKeydown)
-  document.addEventListener('keyup', handleKeyup)
+  document.addEventListener('keydown', handleKeydown, { capture: true })
+  document.addEventListener('keypress', handleKeydown, { capture: true })
+  document.addEventListener('keyup', handleKeyup, { capture: true })
 }
 
 export function teardown() {
   document.removeEventListener('keydown', handleKeydown)
+  document.removeEventListener('keypress', handleKeydown)
   document.removeEventListener('keyup', handleKeyup)
 }
 

@@ -1,7 +1,5 @@
 dependencies:
   '@keynote/theme-base': 'link:../theme-base'
-registry: 'https://registry.npmjs.org/'
-shrinkwrapMinorVersion: 9
-shrinkwrapVersion: 3
+shrinkwrapVersion: 5
 specifiers:
-  '@keynote/theme-base': 'link:../theme-base'
+  '@keynote/theme-base': ^2.0.0-alpha.0

@@ -14,24 +14,21 @@ Vue.use(api)
  * @param {import('vue/types').ComponentOptions} Presentation
  * @returns {Vue}
  */
-export default function createKeynote(Presentation, { theme = {} } = {}) {
-  const LocalComponent = {
-    ...Presentation,
-    components: {
-      ...Presentation.components,
-      Keynote
-    }
+export default function createKeynote(Presentation, { theme = {}, slides } = {}) {
+  const components = {
+    ...theme.slides,
+    ...slides,
+    Keynote
   }
-
-  if (theme.slides) {
-    for (const name in theme.slides) {
-      Vue.component(name, theme.slides[name])
-    }
+  
+  for (const name in components) {
+    Vue.component(name, components[name])
   }
 
   const presentation = new Vue({
+    name: 'KeynoteApp',
     el: '#app',
-    render: createElement => createElement(LocalComponent),
+    render: createElement => createElement(Presentation),
     store,
     router
   })

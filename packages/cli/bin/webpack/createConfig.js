@@ -103,6 +103,7 @@ module.exports = function createBaseConfig({ outDir, debug, theme }) {
   }
 
   vue(cached(config.module.rule('vue').test(/\.vue$/)))
+  vue(cached(config.module.rule('md').test(/\.(md|slides)$/))).use('markdown-loader').loader(require.resolve('./loaders/markdown/index.js'))
 
   config.module
     .rule('images')

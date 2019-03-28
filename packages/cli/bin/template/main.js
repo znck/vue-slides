@@ -1,4 +1,5 @@
 /* eslint-disable */
+import Vue from 'vue'
 import createKeynote from '@keynote/core'
 import Presentation from '@keynote-presentation'
 import upperFirst from 'lodash/upperFirst'
@@ -24,6 +25,7 @@ if (__KEYNOTE_LOAD_COMPONENTS__) {
           .replace(/\.\w+$/, '')
       )
     )
+    console.log(componentName)
     // Globally register the component
     Vue.component(componentName, componentConfig.default || componentConfig)
   })
@@ -57,7 +59,8 @@ if (__KEYNOTE_LOAD_SLIDES__) {
 }
 
 const keynote = createKeynote(Presentation, {
-  theme: require(__THEME__).default
+  theme: require(__THEME__).default,
+  slides
 })
 
 if (__ENV__ !== 'production') {

@@ -1,14 +1,13 @@
 {
   "compileOnSave": true,
-  "include": ["src/**/*", "tests/**/*"],
+  "include": ["packages/**/*"],
   "exclude": ["node_modules", "dist"],
   "compilerOptions": {
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "target": "esnext",
-    "module": "es6",
+    "module": "esnext",
     "baseUrl": "./",
-    "strict": false,
     "noImplicitAny": false,
     "checkJs": false,
     "sourceMap": true,

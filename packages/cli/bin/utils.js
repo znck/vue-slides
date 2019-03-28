@@ -11,7 +11,7 @@ function createWebpackConfig({ file, theme, debug, outDir }) {
 
   const config = createConfig({ debug, outDir, theme })
 
-  if (/\.vue$/.test(file)) {
+  if (/\.(vue|slides)$/.test(file)) {
     config.entry('keynote').add(
       path.relative(process.cwd(), path.resolve(__dirname, './template/main.js'))
     )

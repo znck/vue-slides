@@ -4,10 +4,10 @@ dependencies:
   '@keynote/plugin-touch': 'link:../plugin-touch'
   '@keynote/state': 'link:../state'
   '@znck/prop-types': 0.3.4
-  resize-observer-polyfill: 1.5.0
-  vue: 2.5.17
-  vue-router: 3.0.1
-  vuex: 3.0.1
+  resize-observer-polyfill: 1.5.1
+  vue: 2.6.8
+  vue-router: 3.0.2
+  vuex: 3.1.0
 packages:
   /@znck/prop-types/0.3.4:
     dependencies:
@@ -53,30 +53,28 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-w8OdJAhXL5izerzZMdqzYKMj/pgHJyY3qEPYBjLLxrhcVoHEY9pU5ENIiZyCgG9OR7x3VcUMoD40o6PtVpfR4g==
-  /resize-observer-polyfill/1.5.0:
+  /resize-observer-polyfill/1.5.1:
     dev: false
     resolution:
-      integrity: sha512-M2AelyJDVR/oLnToJLtuDJRBBWUGUvvGigj1411hXhAdyFWqMaqHp7TixW3FpiLuVaikIcR1QL+zqoJoZlOgpg==
-  /vue-router/3.0.1:
+      integrity: sha512-LwZrotdHOo12nQuZlHEmtuXdqGoOD0OhaxopaNFxWzInpEgaLWoVuAMbTzixuosCx2nEG58ngzW3vxdWoxIgdg==
+  /vue-router/3.0.2:
     dev: false
     resolution:
-      integrity: sha512-vLLoY452L+JBpALMP5UHum9+7nzR9PeIBCghU9ZtJ1eWm6ieUI8Zb/DI3MYxH32bxkjzYV1LRjNv4qr8d+uX/w==
-  /vue/2.5.17:
+      integrity: sha512-opKtsxjp9eOcFWdp6xLQPLmRGgfM932Tl56U9chYTnoWqKxQ8M20N7AkdEbM5beUh6wICoFGYugAX9vQjyJLFg==
+  /vue/2.6.8:
     dev: false
     resolution:
-      integrity: sha512-mFbcWoDIJi0w0Za4emyLiW72Jae0yjANHbCVquMKijcavBGypqlF7zHRgMa5k4sesdv7hv2rB4JPdZfR+TPfhQ==
-  /vuex/3.0.1:
+      integrity: sha512-+vp9lEC2Kt3yom673pzg1J7T1NVGuGzO9j8Wxno+rQN2WYVBX2pyo/RGQ3fXCLh2Pk76Skw/laAPCuBuEQ4diw==
+  /vuex/3.1.0:
     dev: false
     resolution:
-      integrity: sha512-wLoqz0B7DSZtgbWL1ShIBBCjv22GV5U+vcBFox658g6V0s4wZV9P4YjCNyoHSyIBpj1f29JBoNQIqD82cR4O3w==
-registry: 'https://registry.npmjs.org/'
-shrinkwrapMinorVersion: 9
-shrinkwrapVersion: 3
+      integrity: sha512-mdHeHT/7u4BncpUZMlxNaIdcN/HIt1GsGG5LKByArvYG/v6DvHcOxvDCts+7SRdCoIRGllK8IMZvQtQXLppDYg==
+shrinkwrapVersion: 5
 specifiers:
-  '@keynote/plugin-keyboard': ^1.1.3
-  '@keynote/plugin-progress': ^1.1.3
-  '@keynote/plugin-touch': ^1.1.3
-  '@keynote/state': ^1.1.3
+  '@keynote/plugin-keyboard': ^2.0.0-alpha.1
+  '@keynote/plugin-progress': ^2.0.0-alpha.0
+  '@keynote/plugin-touch': ^2.0.0-alpha.1
+  '@keynote/state': ^2.0.0-alpha.0
   '@znck/prop-types': ^0.3.4
   resize-observer-polyfill: ^1.5.0
   vue: ^2.5.17

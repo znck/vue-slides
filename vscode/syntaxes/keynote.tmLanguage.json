@@ -1,0 +1,58 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Keynote",
+  "patterns": [
+    {
+      "name": "meta.keynote",
+      "include": "#frontMatter"
+    },
+    {
+      "include": "#slide"
+    }
+  ],
+  "repository": {
+    "slide": {
+      "patterns": [
+        {
+          "name": "slide.keynote",
+          "begin": "<!-- (slide)(?::(.*?))? -->",
+          "end": "(?=<!-- slide(?::.*?)? -->|\\z)",
+          "patterns": [{ "include": "#markdown" }],
+          "beginCaptures": {
+            "0": {
+              "name": "comment.block.separator.slide.keynote"
+            },
+            "1": {
+              "name": "keyword.separator.slide.keynote"
+            },
+            "2": {
+              "name": "title.separator.slide.keynote"
+            }
+          }
+        }
+      ]
+    },
+    "frontMatter": {
+      "begin": "(^|\\A)-{3}\\s*$",
+      "contentName": "meta.embedded.block.frontmatter",
+      "patterns": [
+        {
+          "include": "source.yaml"
+        }
+      ],
+      "end": "(^|\\G)-{3}|\\.{3}\\s*$"
+    },
+    "markdown": {
+      "contentName": "meta.embedded.block.markdown",
+      "patterns": [
+        {
+          "include": "#frontMatter"
+        },
+        {
+          "include": "text.html.markdown"
+        }
+      ]
+    }
+  },
+  "scopeName": "source.keynote"
+}
